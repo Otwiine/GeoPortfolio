@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Otwiine Olweny — Python Programmer Portfolio</title>
@@ -15,12 +17,13 @@
     <meta name="twitter:title" content="Otwiine Olweny — Python Programmer Portfolio"/>
     <meta name="twitter:description" content="Python Programmer specializing in geospatial intelligence, data analysis, and spatial computing."/>
     <meta name="twitter:image" content="https://cdn-ai.onspace.ai/onspace/project/screenshot/online/pre-site/9b5fhk.jpg"/>
-    <!-- Placeholder: Replace with actual OG image URL -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
     <script>
         tailwind.config = {
             theme: {
@@ -40,61 +43,8 @@
             }
         }
     </script>
-    <style>
-        * { scrollbar-width: thin; scrollbar-color: #1e2d3d #0b1219; }
-        *::-webkit-scrollbar { width: 6px; }
-        *::-webkit-scrollbar-track { background: #0b1219; }
-        *::-webkit-scrollbar-thumb { background: #1e2d3d; border-radius: 3px; }
-        @keyframes radarSweep {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        @keyframes pulse-ring {
-            0% { transform: scale(0.8); opacity: 0.6; }
-            50% { transform: scale(1.2); opacity: 0.2; }
-            100% { transform: scale(0.8); opacity: 0.6; }
-        }
-        @keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0; } }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes gridFlow {
-            0% { background-position: 0 0; }
-            100% { background-position: 40px 40px; }
-        }
-        .cursor-blink { animation: blink 1s step-end infinite; }
-        .fade-in-up { animation: fadeInUp 0.5s ease-out forwards; opacity: 0; }
-        .delay-1 { animation-delay: 0.1s; }
-        .delay-2 { animation-delay: 0.2s; }
-        .delay-3 { animation-delay: 0.3s; }
-        .delay-4 { animation-delay: 0.4s; }
-        .delay-5 { animation-delay: 0.5s; }
-        .grid-bg {
-            background-image: 
-                linear-gradient(rgba(34,197,94,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(34,197,94,0.03) 1px, transparent 1px);
-            background-size: 40px 40px;
-        }
-        .nav-item { transition: all 0.2s ease; }
-        .nav-item:hover { background: rgba(34,197,94,0.08); }
-        .nav-item.active { background: rgba(34,197,94,0.15); }
-        .card-hover { transition: all 0.3s ease; border: 1px solid transparent; }
-        .card-hover:hover { border-color: rgba(34,197,94,0.2); transform: translateY(-2px); }
-        .page-section { display: none; }
-        .page-section.active { display: block; }
-        .timeline-line { position: relative; }
-        .timeline-line::before {
-            content: '';
-            position: absolute;
-            left: 7px;
-            top: 24px;
-            bottom: -20px;
-            width: 2px;
-            background: linear-gradient(to bottom, rgba(34,197,94,0.4), rgba(34,197,94,0.05));
-        }
-        .skill-bar { transition: width 1s ease-out; }
-    </style>
+
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body class="bg-base-900 text-gray-300 font-sans min-h-screen">
 
@@ -163,7 +113,6 @@
 
         <!-- Sidebar (Desktop) -->
         <aside class="hidden lg:flex flex-col w-60 xl:w-64 fixed left-0 top-0 bottom-0 bg-base-800 border-r border-base-500/20 p-5 z-40">
-            <!-- Branding -->
             <div class="flex items-center gap-3 mb-8">
                 <div class="w-10 h-10 rounded-xl bg-accent-500/15 border border-accent-500/30 flex items-center justify-center">
                     <i class="fas fa-globe text-accent-400 text-lg"></i>
@@ -174,10 +123,8 @@
                 </div>
             </div>
 
-            <!-- Navigation Label -->
             <div class="text-[10px] font-mono text-slate-500 tracking-widest uppercase mb-3 px-3">Navigation</div>
 
-            <!-- Nav Items -->
             <nav class="flex-1 space-y-1" id="desktopNav">
                 <a href="#" data-page="dashboard" class="nav-item active flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-accent-400">
                     <i class="fas fa-th-large w-5 text-center text-base"></i> Dashboard
@@ -197,7 +144,6 @@
                 </a>
             </nav>
 
-            <!-- Sidebar Footer -->
             <div class="space-y-4">
                 <div class="flex items-center gap-4 justify-center pt-3 border-t border-base-500/20">
                     <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
@@ -240,12 +186,10 @@
                 <section id="page-dashboard" class="page-section active">
                     <!-- Hero -->
                     <div class="bg-base-800/50 rounded-2xl border border-base-500/20 p-6 sm:p-8 lg:p-10 mb-8 relative overflow-hidden fade-in-up">
-                        <!-- Grid overlay -->
                         <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(34,197,94,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(34,197,94,0.06) 1px, transparent 1px); background-size: 30px 30px;"></div>
 
                         <div class="relative flex flex-col lg:flex-row items-start lg:items-center gap-8">
                             <div class="flex-1 max-w-2xl">
-                                <!-- Badge -->
                                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-500/30 bg-accent-500/10 mb-6">
                                     <i class="fas fa-bolt text-accent-400 text-xs"></i>
                                     <span class="text-accent-400 font-mono text-xs tracking-wider uppercase">Python Programmer</span>
@@ -261,10 +205,10 @@
                                     spatial data across 14 countries.
                                 </p>
                                 <div class="flex flex-wrap gap-3">
-                                    <button onclick="navigateTo(&#39;experience&#39;)" class="inline-flex items-center gap-2 px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors text-sm">
+                                    <button onclick="navigateTo('experience')" class="inline-flex items-center gap-2 px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors text-sm">
                                         Explore Projects <i class="fas fa-arrow-right text-xs"></i>
                                     </button>
-                                    <button onclick="navigateTo(&#39;techstack&#39;)" class="inline-flex items-center gap-2 px-6 py-3 bg-base-700 hover:bg-base-600 text-gray-300 font-semibold rounded-lg border border-base-500/30 transition-colors text-sm">
+                                    <button onclick="navigateTo('techstack')" class="inline-flex items-center gap-2 px-6 py-3 bg-base-700 hover:bg-base-600 text-gray-300 font-semibold rounded-lg border border-base-500/30 transition-colors text-sm">
                                         View Skills
                                     </button>
                                 </div>
@@ -272,24 +216,19 @@
 
                             <!-- Radar Animation -->
                             <div class="hidden lg:flex items-center justify-center w-64 xl:w-72 h-64 xl:h-72 relative flex-shrink-0">
-                                <!-- Radar rings -->
                                 <div class="absolute inset-0 rounded-full border border-accent-500/10"></div>
                                 <div class="absolute inset-6 rounded-full border border-accent-500/10"></div>
                                 <div class="absolute inset-12 rounded-full border border-accent-500/10"></div>
                                 <div class="absolute inset-[4.5rem] rounded-full border border-accent-500/15"></div>
-                                <!-- Cross lines -->
                                 <div class="absolute left-1/2 top-0 bottom-0 w-px bg-accent-500/8"></div>
                                 <div class="absolute top-1/2 left-0 right-0 h-px bg-accent-500/8"></div>
-                                <!-- Center dot -->
                                 <div class="w-5 h-5 rounded-full bg-accent-400/30 border-2 border-accent-400 z-10 relative">
                                     <div class="absolute inset-0 rounded-full bg-accent-400 animate-ping opacity-20"></div>
                                 </div>
-                                <!-- Sweep -->
                                 <div class="absolute inset-0 rounded-full" style="animation: radarSweep 4s linear infinite;">
                                     <div class="absolute top-1/2 left-1/2 w-1/2 h-px origin-left" style="background: linear-gradient(to right, rgba(74,222,128,0.5), transparent);"></div>
                                     <div class="absolute top-1/2 left-1/2 origin-left" style="width: 50%; height: 50%; margin-top: -25%; background: conic-gradient(from -10deg, rgba(74,222,128,0.12), transparent 40deg);"></div>
                                 </div>
-                                <!-- Dots on radar -->
                                 <div class="absolute w-2.5 h-2.5 rounded-full bg-accent-400/60" style="top: 18%; right: 25%; animation: pulse-ring 3s ease-in-out infinite;"></div>
                                 <div class="absolute w-1.5 h-1.5 rounded-full bg-gold-400/60" style="top: 30%; right: 15%; animation: pulse-ring 2.5s ease-in-out infinite 0.5s;"></div>
                                 <div class="absolute w-2 h-2 rounded-full bg-teal-400/50" style="bottom: 28%; left: 22%; animation: pulse-ring 3.5s ease-in-out infinite 1s;"></div>
@@ -335,11 +274,11 @@
                         <div class="lg:col-span-2">
                             <div class="flex items-center justify-between mb-4">
                                 <h2 class="text-lg font-bold text-white">Featured Projects</h2>
-                                <button onclick="navigateTo(&#39;experience&#39;)" class="text-xs font-mono text-accent-400 hover:text-accent-500 transition-colors flex items-center gap-1">VIEW ALL <i class="fas fa-arrow-right text-[10px]"></i></button>
+                                <button onclick="navigateTo('experience')" class="text-xs font-mono text-accent-400 hover:text-accent-500 transition-colors flex items-center gap-1">VIEW ALL <i class="fas fa-arrow-right text-[10px]"></i></button>
                             </div>
                             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                                 <div class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800">
-                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&amp;h=300&amp;fit=crop" alt="Satellite view of city lights at night representing remote sensing project" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy"/>
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" alt="Satellite view of city lights at night representing remote sensing project" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy"/>
                                     <div class="absolute inset-0 bg-gradient-to-t from-base-900/90 via-transparent to-transparent"></div>
                                     <div class="absolute bottom-3 left-3 right-3">
                                         <div class="flex items-center gap-2 mb-1">
@@ -349,7 +288,7 @@
                                     </div>
                                 </div>
                                 <div class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800">
-                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&amp;h=300&amp;fit=crop" alt="Data analytics dashboard representing defense intelligence project" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy"/>
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Data analytics dashboard representing defense intelligence project" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy"/>
                                     <div class="absolute inset-0 bg-gradient-to-t from-base-900/90 via-transparent to-transparent"></div>
                                     <div class="absolute bottom-3 left-3 right-3">
                                         <div class="flex items-center gap-2 mb-1">
@@ -359,7 +298,7 @@
                                     </div>
                                 </div>
                                 <div class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800 sm:col-span-2 lg:col-span-1">
-                                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&amp;h=300&amp;fit=crop" alt="Aerial cityscape representing urban planning project" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy"/>
+                                    <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=300&fit=crop" alt="Aerial cityscape representing urban planning project" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy"/>
                                     <div class="absolute inset-0 bg-gradient-to-t from-base-900/90 via-transparent to-transparent"></div>
                                     <div class="absolute bottom-3 left-3 right-3">
                                         <div class="flex items-center gap-2 mb-1">
@@ -415,7 +354,6 @@
                 <!-- ========== ABOUT PAGE ========== -->
                 <section id="page-about" class="page-section">
                     <div class="max-w-5xl">
-                        <!-- Header -->
                         <div class="grid lg:grid-cols-3 gap-6 mb-8 fade-in-up">
                             <div class="lg:col-span-2 bg-base-800/50 rounded-2xl border border-base-500/20 p-6 sm:p-8">
                                 <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2">About <span class="text-accent-400">Me</span></h1>
@@ -430,7 +368,6 @@
                                     <span class="flex items-center gap-2"><i class="fas fa-envelope text-accent-400"></i> contact@olweny.dev</span>
                                 </div>
                             </div>
-                            <!-- Mini Stats -->
                             <div class="bg-base-800/50 rounded-2xl border border-base-500/20 p-6 grid grid-cols-2 gap-4">
                                 <div class="text-center">
                                     <div class="text-3xl font-bold text-accent-400">18</div>
@@ -451,7 +388,6 @@
                             </div>
                         </div>
 
-                        <!-- Education &amp; Certifications -->
                         <div class="grid lg:grid-cols-2 gap-6 mb-8 fade-in-up delay-1">
                             <div class="bg-base-800/40 rounded-2xl border border-base-500/15 p-6">
                                 <div class="flex items-center gap-2 mb-5">
@@ -483,7 +419,6 @@
                             </div>
                         </div>
 
-                        <!-- Interests -->
                         <div class="bg-base-800/40 rounded-2xl border border-base-500/15 p-6 fade-in-up delay-2">
                             <div class="flex items-center gap-2 mb-5">
                                 <i class="fas fa-heart text-red-400"></i>
@@ -508,7 +443,6 @@
                         <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2 fade-in-up">Tech <span class="text-accent-400">Stack</span></h1>
                         <p class="text-slate-400 mb-8 fade-in-up">Tools, languages, and frameworks I work with daily.</p>
 
-                        <!-- Programming Languages -->
                         <div class="mb-8 fade-in-up delay-1">
                             <div class="flex items-center gap-2 mb-4">
                                 <i class="fas fa-code text-accent-400"></i>
@@ -554,7 +488,6 @@
                             </div>
                         </div>
 
-                        <!-- GIS &amp; Geospatial -->
                         <div class="mb-8 fade-in-up delay-2">
                             <div class="flex items-center gap-2 mb-4">
                                 <i class="fas fa-globe text-accent-400"></i>
@@ -574,7 +507,6 @@
                             </div>
                         </div>
 
-                        <!-- Python Ecosystem -->
                         <div class="mb-8 fade-in-up delay-3">
                             <div class="flex items-center gap-2 mb-4">
                                 <i class="fab fa-python text-accent-400"></i>
@@ -593,7 +525,6 @@
                             </div>
                         </div>
 
-                        <!-- DevOps &amp; Cloud -->
                         <div class="mb-8 fade-in-up delay-4">
                             <div class="flex items-center gap-2 mb-4">
                                 <i class="fas fa-cloud text-accent-400"></i>
@@ -609,7 +540,6 @@
                             </div>
                         </div>
 
-                        <!-- Remote Sensing -->
                         <div class="fade-in-up delay-5">
                             <div class="flex items-center gap-2 mb-4">
                                 <i class="fas fa-satellite text-accent-400"></i>
@@ -632,9 +562,7 @@
                         <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2 fade-in-up"><i class="fas fa-briefcase text-accent-400 mr-2"></i>Experience</h1>
                         <p class="text-slate-400 mb-8 fade-in-up">Professional journey across geospatial domains.</p>
 
-                        <!-- Timeline -->
                         <div class="space-y-8 fade-in-up delay-1">
-                            <!-- Experience 1 -->
                             <div class="timeline-line flex gap-4 sm:gap-6">
                                 <div class="flex flex-col items-center flex-shrink-0">
                                     <div class="w-4 h-4 rounded-full bg-accent-400/30 border-2 border-accent-400"></div>
@@ -656,7 +584,6 @@
                                 </div>
                             </div>
 
-                            <!-- Experience 2 -->
                             <div class="timeline-line flex gap-4 sm:gap-6">
                                 <div class="flex flex-col items-center flex-shrink-0">
                                     <div class="w-4 h-4 rounded-full bg-accent-400/20 border-2 border-accent-400/60"></div>
@@ -677,7 +604,6 @@
                                 </div>
                             </div>
 
-                            <!-- Experience 3 -->
                             <div class="timeline-line flex gap-4 sm:gap-6">
                                 <div class="flex flex-col items-center flex-shrink-0">
                                     <div class="w-4 h-4 rounded-full bg-accent-400/15 border-2 border-accent-400/40"></div>
@@ -698,7 +624,6 @@
                                 </div>
                             </div>
 
-                            <!-- Experience 4 -->
                             <div class="flex gap-4 sm:gap-6">
                                 <div class="flex flex-col items-center flex-shrink-0">
                                     <div class="w-4 h-4 rounded-full bg-accent-400/10 border-2 border-accent-400/30"></div>
@@ -726,9 +651,8 @@
                 <section id="page-contact" class="page-section">
                     <div class="max-w-3xl">
                         <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2 fade-in-up">Get in <span class="text-accent-400">Touch</span></h1>
-                        <p class="text-slate-400 mb-8 fade-in-up">Have a geospatial challenge? Let&#39;s discuss how I can help.</p>
+                        <p class="text-slate-400 mb-8 fade-in-up">Have a geospatial challenge? Let's discuss how I can help.</p>
 
-                        <!-- Contact Info Cards -->
                         <div class="grid sm:grid-cols-3 gap-3 mb-8 fade-in-up delay-1">
                             <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-5 card-hover text-center">
                                 <div class="w-10 h-10 rounded-lg bg-accent-500/15 border border-accent-500/20 flex items-center justify-center mx-auto mb-3">
@@ -753,7 +677,6 @@
                             </div>
                         </div>
 
-                        <!-- Contact Form -->
                         <div class="bg-base-800/50 rounded-2xl border border-base-500/20 p-6 sm:p-8 fade-in-up delay-2">
                             <form id="contactForm" class="space-y-5">
                                 <div class="grid sm:grid-cols-2 gap-4">
@@ -790,7 +713,7 @@
                                     <i class="fas fa-check text-accent-400 text-2xl"></i>
                                 </div>
                                 <h3 class="text-lg font-bold text-white mb-2">Message Sent!</h3>
-                                <p class="text-sm text-slate-400">Thank you for reaching out. I&#39;ll get back to you within 24 hours.</p>
+                                <p class="text-sm text-slate-400">Thank you for reaching out. I'll get back to you within 24 hours.</p>
                             </div>
                         </div>
                     </div>
@@ -810,107 +733,6 @@
         </main>
     </div>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const pages = ['dashboard', 'about', 'techstack', 'experience', 'contact'];
-        const breadcrumbEl = document.getElementById('breadcrumb');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenuClose = document.getElementById('mobileMenuClose');
-        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-
-        function navigateTo(page) {
-            // Hide all pages
-            pages.forEach(p => {
-                const section = document.getElementById('page-' + p);
-                if (section) section.classList.remove('active');
-            });
-
-            // Show target page
-            const targetSection = document.getElementById('page-' + page);
-            if (targetSection) {
-                targetSection.classList.add('active');
-                // Re-trigger animations
-                targetSection.querySelectorAll('.fade-in-up').forEach(el => {
-                    el.style.animation = 'none';
-                    el.offsetHeight; // force reflow
-                    el.style.animation = '';
-                });
-            }
-
-            // Update nav active states
-            document.querySelectorAll('#desktopNav .nav-item, #mobileNav .nav-item').forEach(item => {
-                item.classList.remove('active');
-                item.classList.remove('text-accent-400');
-                item.classList.add('text-slate-300');
-                const dot = item.querySelector('.ml-auto');
-                if (dot) dot.remove();
-            });
-
-            document.querySelectorAll(`[data-page="${page}"]`).forEach(item => {
-                item.classList.add('active');
-                item.classList.remove('text-slate-300');
-                item.classList.add('text-accent-400');
-                const dot = document.createElement('span');
-                dot.className = 'ml-auto w-2 h-2 rounded-full bg-accent-400';
-                item.appendChild(dot);
-            });
-
-            // Update breadcrumb
-            if (breadcrumbEl) {
-                breadcrumbEl.textContent = page === 'techstack' ? 'tech-stack' : page;
-            }
-
-            // Close mobile menu
-            closeMobileMenu();
-
-            // Scroll to top
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        // Make navigateTo globally accessible
-        window.navigateTo = navigateTo;
-
-        // Desktop nav clicks
-        document.querySelectorAll('#desktopNav .nav-item, #mobileNav .nav-item').forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                const page = this.dataset.page;
-                navigateTo(page);
-            });
-        });
-
-        // Mobile menu
-        function openMobileMenu() {
-            mobileMenu.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-        function closeMobileMenu() {
-            mobileMenu.classList.add('hidden');
-            document.body.style.overflow = '';
-        }
-
-        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
-        if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
-        if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
-
-        // Contact form
-        const contactForm = document.getElementById('contactForm');
-        const contactSuccess = document.getElementById('contactSuccess');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                contactForm.classList.add('hidden');
-                contactSuccess.classList.remove('hidden');
-                setTimeout(() => {
-                    contactForm.classList.remove('hidden');
-                    contactSuccess.classList.add('hidden');
-                    contactForm.reset();
-                }, 4000);
-            });
-        }
-    });
-    </script>
-
-
-</body></html>
+    <script src="js/main.js"></script>
+</body>
+</html>
