@@ -4,12 +4,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Otwiine Olweny — Portfolio</title>
-    <meta name="description" content="Python Programmer specializing in geospatial intelligence."/>
+    <meta name="description" content="Python Programmer & Front-End Web Developer from Kampala, Uganda."/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="images/coding.png"/>
     <script>
         tailwind.config = {
             theme: {
@@ -37,7 +38,7 @@
     <header class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-base-800/95 backdrop-blur-sm border-b border-base-500/30 px-4 py-3 flex items-center justify-between">
         <div class="flex items-center gap-3">
             <div class="w-8 h-8 rounded-lg bg-accent-500/20 border border-accent-500/30 flex items-center justify-center">
-                <i class="fas fa-globe text-accent-400 text-sm"></i>
+                <img src="images/coding.png" alt="logo" class="w-5 h-5 object-contain" />
             </div>
             <div>
                 <div class="text-white font-semibold text-sm leading-tight">Otwiine Olweny</div>
@@ -56,7 +57,7 @@
             <div class="flex items-center justify-between mb-8">
                 <div class="flex items-center gap-3">
                     <div class="w-9 h-9 rounded-lg bg-accent-500/20 border border-accent-500/30 flex items-center justify-center">
-                        <i class="fas fa-globe text-accent-400"></i>
+                        <img src="images/coding.png" alt="logo" class="w-5 h-5 object-contain" />
                     </div>
                     <div>
                         <div class="text-white font-semibold text-sm">Otwiine Olweny</div>
@@ -66,27 +67,17 @@
                 <button id="mobileMenuClose" class="text-gray-400" aria-label="Close menu"><i class="fas fa-times"></i></button>
             </div>
             <nav class="flex-1 space-y-1">
-                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-th-large w-5 text-center"></i> Dashboard
-                </a>
-                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-user w-5 text-center"></i> About Me
-                </a>
-                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack
-                </a>
-                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-briefcase w-5 text-center"></i> Experience
-                </a>
-                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-envelope w-5 text-center"></i> Contact
-                </a>
+                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-th-large w-5 text-center"></i> Dashboard</a>
+                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-user w-5 text-center"></i> About Me</a>
+                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack</a>
+                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-briefcase w-5 text-center"></i> Experience</a>
+                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-envelope w-5 text-center"></i> Contact</a>
             </nav>
             <div class="pt-4 border-t border-base-500/30">
                 <div class="flex items-center gap-4 justify-center">
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                    <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                    <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 </div>
             </div>
         </div>
@@ -94,12 +85,10 @@
 
     <!-- Desktop Layout -->
     <div class="flex min-h-screen">
-
-        <!-- Sidebar -->
         <aside class="hidden lg:flex flex-col w-60 xl:w-64 fixed left-0 top-0 bottom-0 bg-base-800 border-r border-base-500/20 p-5 z-40">
             <div class="flex items-center gap-3 mb-8">
                 <div class="w-10 h-10 rounded-xl bg-accent-500/15 border border-accent-500/30 flex items-center justify-center">
-                    <i class="fas fa-globe text-accent-400 text-lg"></i>
+                    <img src="images/coding.png" alt="logo" class="w-6 h-6 object-contain" />
                 </div>
                 <div>
                     <div class="text-white font-bold text-sm leading-tight">Otwiine Olweny</div>
@@ -108,58 +97,41 @@
             </div>
             <div class="text-[10px] font-mono text-slate-500 tracking-widest uppercase mb-3 px-3">Navigation</div>
             <nav class="flex-1 space-y-1">
-                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-th-large w-5 text-center text-base"></i> Dashboard
-                </a>
-                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-user w-5 text-center text-base"></i> About Me
-                </a>
-                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-chart-bar w-5 text-center text-base"></i> Tech Stack
-                </a>
-                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-briefcase w-5 text-center text-base"></i> Experience
-                </a>
-                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-envelope w-5 text-center text-base"></i> Contact
-                </a>
+                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-th-large w-5 text-center"></i> Dashboard</a>
+                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-user w-5 text-center"></i> About Me</a>
+                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack</a>
+                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-briefcase w-5 text-center"></i> Experience</a>
+                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-envelope w-5 text-center"></i> Contact</a>
             </nav>
             <div class="space-y-4">
                 <div class="flex items-center gap-4 justify-center pt-3 border-t border-base-500/20">
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                    <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                    <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 </div>
                 <div class="flex items-center gap-2 px-1">
                     <span class="w-2 h-2 rounded-full bg-accent-400"></span>
                     <span class="text-[11px] font-mono text-slate-400">SYSTEM ONLINE</span>
                 </div>
-                <div class="text-[11px] font-mono text-slate-500 px-1">2026-03-02</div>
             </div>
         </aside>
 
-        <!-- Main Content -->
         <main class="flex-1 lg:ml-60 xl:ml-64 min-h-screen grid-bg">
-
-            <!-- Top Bar -->
             <div class="sticky top-0 z-30 bg-base-900/80 backdrop-blur-md border-b border-base-500/15 px-4 sm:px-6 lg:px-8 py-3 hidden lg:flex items-center justify-between">
                 <div class="flex items-center gap-2 font-mono text-sm text-slate-400">
-                    <span class="text-slate-500">~/olweny</span>
+                    <span class="text-slate-500">~/otwiine</span>
                     <span class="text-slate-600">/</span>
                     <span class="text-gray-300" id="breadcrumb">dashboard</span>
                     <span class="cursor-blink text-accent-400">&#9608;</span>
                 </div>
                 <div class="flex items-center gap-4 font-mono text-xs text-slate-500">
-                    <span>LAT: 0.3476°N</span>
-                    <span>LNG: 32.5825°E</span>
+                    <span>Kampala, Uganda</span>
                     <span class="flex items-center gap-1.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span>
-                        <span class="text-accent-400">SECURE</span>
+                        <span class="text-accent-400">ONLINE</span>
                     </span>
                 </div>
             </div>
-
-            <!-- Page Content -->
             <div class="px-4 sm:px-6 lg:px-8 py-6 lg:py-8 pt-20 lg:pt-8 pb-24 lg:pb-8">
                 <!-- DASHBOARD -->
                 <div class="bg-base-800/50 rounded-2xl border border-base-500/20 p-6 sm:p-8 lg:p-10 mb-8 relative overflow-hidden fade-in-up">
@@ -168,16 +140,15 @@
                         <div class="flex-1 max-w-2xl">
                             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-accent-500/30 bg-accent-500/10 mb-6">
                                 <i class="fas fa-bolt text-accent-400 text-xs"></i>
-                                <span class="text-accent-400 font-mono text-xs tracking-wider uppercase">Python Programmer</span>
+                                <span class="text-accent-400 font-mono text-xs tracking-wider uppercase">Python Programmer · Front-End Web Developer</span>
                             </div>
                             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-                                Building solutions through<br/>
-                                <span class="text-accent-400">spatial intelligence</span>
+                                👋 Hey, I'm Otwiine<br/>
+                                <span class="text-accent-400">I build with code & maps.</span>
                             </h1>
                             <p class="text-slate-300 text-base lg:text-lg leading-relaxed mb-8 max-w-xl">
-                                Portfolio of 18 geospatial projects spanning GIS analysis, defense intelligence,
-                                remote sensing, and urban planning — delivering actionable insights from
-                                spatial data across 14 countries.
+                                I'm a Python Programmer and Front-End Web Developer. Currently studying Geographical Information Systems (GIS) at QSAIR.
+                                I enjoy creating clean, responsive websites and working with geospatial data — solving real-world problems through code.
                             </p>
                             <div class="flex flex-wrap gap-3">
                                 <a href="experience.html" class="inline-flex items-center gap-2 px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-colors text-sm">
@@ -201,140 +172,127 @@
                             </div>
                             <div class="absolute inset-0 rounded-full" style="animation: radarSweep 4s linear infinite;">
                                 <div class="absolute top-1/2 left-1/2 w-1/2 h-px origin-left" style="background: linear-gradient(to right, rgba(74,222,128,0.5), transparent);"></div>
-                                <div class="absolute top-1/2 left-1/2 origin-left" style="width: 50%; height: 50%; margin-top: -25%; background: conic-gradient(from -10deg, rgba(74,222,128,0.12), transparent 40deg);"></div>
+                                <div class="absolute top-1/2 left-1/2 origin-left" style="width:50%;height:50%;margin-top:-25%;background:conic-gradient(from -10deg,rgba(74,222,128,0.12),transparent 40deg);"></div>
                             </div>
-                            <div class="absolute w-2.5 h-2.5 rounded-full bg-accent-400/60" style="top: 18%; right: 25%; animation: pulse-ring 3s ease-in-out infinite;"></div>
-                            <div class="absolute w-1.5 h-1.5 rounded-full bg-gold-400/60" style="top: 30%; right: 15%; animation: pulse-ring 2.5s ease-in-out infinite 0.5s;"></div>
-                            <div class="absolute w-2 h-2 rounded-full bg-teal-400/50" style="bottom: 28%; left: 22%; animation: pulse-ring 3.5s ease-in-out infinite 1s;"></div>
-                            <div class="absolute w-1.5 h-1.5 rounded-full bg-accent-400/40" style="bottom: 40%; right: 32%; animation: pulse-ring 4s ease-in-out infinite 0.8s;"></div>
+                            <div class="absolute w-2.5 h-2.5 rounded-full bg-accent-400/60" style="top:18%;right:25%;animation:pulse-ring 3s ease-in-out infinite;"></div>
+                            <div class="absolute w-1.5 h-1.5 rounded-full bg-gold-400/60" style="top:30%;right:15%;animation:pulse-ring 2.5s ease-in-out infinite 0.5s;"></div>
+                            <div class="absolute w-2 h-2 rounded-full bg-teal-400/50" style="bottom:28%;left:22%;animation:pulse-ring 3.5s ease-in-out infinite 1s;"></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stats -->
+                <!-- Stats - highlighted as unverified -->
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-8 fade-in-up delay-1">
                     <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 sm:p-5 card-hover">
                         <div class="flex items-start justify-between mb-3">
-                            <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Projects Completed</span>
+                            <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Projects</span>
                             <i class="fas fa-map text-gold-400/60 text-sm"></i>
                         </div>
-                        <div class="text-2xl sm:text-3xl font-bold text-accent-400">18</div>
+                        <div class="text-2xl sm:text-3xl font-bold text-accent-400"><span style="background-color:#fef08a;color:#1a1a1a;border-radius:4px;padding:1px 4px;">?</span></div>
                     </div>
                     <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 sm:p-5 card-hover">
                         <div class="flex items-start justify-between mb-3">
-                            <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Years Experience</span>
+                            <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Experience</span>
                             <i class="fas fa-calendar text-gold-400/60 text-sm"></i>
                         </div>
-                        <div class="text-2xl sm:text-3xl font-bold text-accent-400">7 <span class="text-base font-normal text-slate-400">yrs</span></div>
+                        <div class="text-2xl sm:text-3xl font-bold text-accent-400"><span style="background-color:#fef08a;color:#1a1a1a;border-radius:4px;padding:1px 4px;">?</span></div>
                     </div>
                     <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 sm:p-5 card-hover">
                         <div class="flex items-start justify-between mb-3">
-                            <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Countries</span>
+                            <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Location</span>
                             <i class="fas fa-globe text-teal-400/60 text-sm"></i>
                         </div>
-                        <div class="text-2xl sm:text-3xl font-bold text-white">14</div>
+                        <div class="text-lg font-bold text-white">Kampala, UG</div>
                     </div>
                     <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 sm:p-5 card-hover">
                         <div class="flex items-start justify-between mb-3">
-                            <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Tools Mastered</span>
+                            <span class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">Tools</span>
                             <i class="fas fa-wrench text-gold-400/60 text-sm"></i>
                         </div>
-                        <div class="text-2xl sm:text-3xl font-bold text-gold-400">24</div>
+                        <div class="text-2xl sm:text-3xl font-bold text-gold-400"><span style="background-color:#fef08a;color:#1a1a1a;border-radius:4px;padding:1px 4px;">?</span></div>
                     </div>
                 </div>
 
-                <!-- Featured Projects + Domains -->
+                <!-- Projects + Domains -->
                 <div class="grid lg:grid-cols-3 gap-6 fade-in-up delay-2">
                     <div class="lg:col-span-2">
                         <div class="flex items-center justify-between mb-4">
                             <h2 class="text-lg font-bold text-white">Featured Projects</h2>
                             <a href="experience.html" class="text-xs font-mono text-accent-400 hover:text-accent-500 transition-colors flex items-center gap-1">VIEW ALL <i class="fas fa-arrow-right text-[10px]"></i></a>
                         </div>
-                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <div class="grid sm:grid-cols-2 gap-3">
+                            <!-- School Vote Uganda -->
                             <div class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800">
-                                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop" alt="Remote sensing project" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy"/>
+                                <img src="images/Banner_1.png" alt="School Vote Uganda" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity"/>
                                 <div class="absolute inset-0 bg-gradient-to-t from-base-900/90 via-transparent to-transparent"></div>
                                 <div class="absolute bottom-3 left-3 right-3">
-                                    <div class="flex items-center gap-2 mb-1">
-                                        <span class="text-[10px] font-mono text-teal-400 bg-teal-500/15 px-2 py-0.5 rounded">REMOTE SENSING</span>
-                                        <span class="text-[10px] font-mono text-accent-400 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span> COMPLETED</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800">
-                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="Defense intelligence project" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy"/>
-                                <div class="absolute inset-0 bg-gradient-to-t from-base-900/90 via-transparent to-transparent"></div>
-                                <div class="absolute bottom-3 left-3 right-3">
-                                    <div class="flex items-center gap-2 mb-1">
-                                        <span class="text-[10px] font-mono text-red-400 bg-red-500/15 px-2 py-0.5 rounded">DEFENSE</span>
-                                        <span class="text-[10px] font-mono text-accent-400 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span> COMPLETED</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800 sm:col-span-2 lg:col-span-1">
-                                <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=300&fit=crop" alt="Urban planning project" class="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity" loading="lazy"/>
-                                <div class="absolute inset-0 bg-gradient-to-t from-base-900/90 via-transparent to-transparent"></div>
-                                <div class="absolute bottom-3 left-3 right-3">
-                                    <div class="flex items-center gap-2 mb-1">
-                                        <span class="text-[10px] font-mono text-blue-400 bg-blue-500/15 px-2 py-0.5 rounded">URBAN PLANNING</span>
+                                    <div class="text-sm font-bold text-white mb-1">School Vote Uganda</div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-[10px] font-mono text-teal-400 bg-teal-500/15 px-2 py-0.5 rounded">HTML/CSS/JS/Python</span>
                                         <span class="text-[10px] font-mono text-gold-400 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span> IN PROGRESS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- RIS Tutoring -->
+                            <div class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800">
+                                <img src="images/ris-logo.png" alt="Redemption International School" class="w-full h-full object-contain p-6 opacity-80 group-hover:opacity-100 transition-opacity bg-white/5"/>
+                                <div class="absolute inset-0 bg-gradient-to-t from-base-900/90 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-3 left-3 right-3">
+                                    <div class="text-sm font-bold text-white mb-1">Python Tutor @ RIS</div>
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-[10px] font-mono text-accent-400 bg-accent-500/15 px-2 py-0.5 rounded">TEACHING</span>
+                                        <span class="text-[10px] font-mono text-accent-400 flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span> ACTIVE</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Domains -->
                     <div>
                         <h2 class="text-lg font-bold text-white mb-4">Domains</h2>
                         <div class="space-y-2">
                             <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-start gap-3">
                                 <span class="w-2.5 h-2.5 rounded-full bg-accent-400 mt-1.5 flex-shrink-0"></span>
                                 <div class="flex-1 min-w-0">
-                                    <div class="text-sm font-semibold text-white">GIS &amp; Spatial Analysis</div>
-                                    <div class="text-xs text-slate-400 truncate">Custom maps, spatial modeling, network analysis</div>
+                                    <div class="text-sm font-semibold text-white">GIS &amp; Geospatial</div>
+                                    <div class="text-xs text-slate-400">Studying at QSAIR</div>
                                 </div>
-                                <span class="text-xs font-mono bg-accent-500/15 text-accent-400 px-2 py-0.5 rounded">6</span>
-                            </div>
-                            <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-start gap-3">
-                                <span class="w-2.5 h-2.5 rounded-full bg-red-400 mt-1.5 flex-shrink-0"></span>
-                                <div class="flex-1 min-w-0">
-                                    <div class="text-sm font-semibold text-white">Defense &amp; Surveillance</div>
-                                    <div class="text-xs text-slate-400 truncate">Threat assessment, terrain analysis, route planning</div>
-                                </div>
-                                <span class="text-xs font-mono bg-red-500/15 text-red-400 px-2 py-0.5 rounded">5</span>
                             </div>
                             <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-start gap-3">
                                 <span class="w-2.5 h-2.5 rounded-full bg-blue-400 mt-1.5 flex-shrink-0"></span>
                                 <div class="flex-1 min-w-0">
-                                    <div class="text-sm font-semibold text-white">Remote Sensing</div>
-                                    <div class="text-xs text-slate-400 truncate">Land cover analysis, change detection, vegetation</div>
+                                    <div class="text-sm font-semibold text-white">Web Development</div>
+                                    <div class="text-xs text-slate-400">HTML, CSS, Python</div>
                                 </div>
-                                <span class="text-xs font-mono bg-blue-500/15 text-blue-400 px-2 py-0.5 rounded">5</span>
                             </div>
                             <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-start gap-3">
                                 <span class="w-2.5 h-2.5 rounded-full bg-purple-400 mt-1.5 flex-shrink-0"></span>
                                 <div class="flex-1 min-w-0">
-                                    <div class="text-sm font-semibold text-white">Urban Planning</div>
-                                    <div class="text-xs text-slate-400 truncate">Zoning analysis, infrastructure mapping, transit</div>
+                                    <div class="text-sm font-semibold text-white">Teaching</div>
+                                    <div class="text-xs text-slate-400">Python tutoring @ RIS</div>
                                 </div>
-                                <span class="text-xs font-mono bg-purple-500/15 text-purple-400 px-2 py-0.5 rounded">2</span>
+                            </div>
+                            <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-start gap-3">
+                                <span class="w-2.5 h-2.5 rounded-full bg-gold-400 mt-1.5 flex-shrink-0"></span>
+                                <div class="flex-1 min-w-0">
+                                    <div class="text-sm font-semibold text-white">AI &amp; Machine Learning</div>
+                                    <div class="text-xs text-slate-400">Satellite data analysis</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Mobile Footer -->
             <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-base-800/95 backdrop-blur-sm border-t border-base-500/30 px-4 py-3 flex items-center justify-center gap-6 z-30">
-                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
-                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
-                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 <span class="text-[10px] font-mono text-slate-500 flex items-center gap-1.5 ml-4">
                     <span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span> ONLINE
                 </span>
             </div>
         </main>
     </div>
-
     <script src="js/main.js"></script>
 </body>
 </html>

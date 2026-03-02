@@ -4,12 +4,13 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Tech Stack — Otwiine Olweny</title>
-    <meta name="description" content="Tools, languages, and frameworks used by Otwiine Olweny."/>
+    <meta name="description" content="Languages and tools used by Otwiine Olweny."/>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="images/coding.png"/>
     <script>
         tailwind.config = {
             theme: {
@@ -37,7 +38,7 @@
     <header class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-base-800/95 backdrop-blur-sm border-b border-base-500/30 px-4 py-3 flex items-center justify-between">
         <div class="flex items-center gap-3">
             <div class="w-8 h-8 rounded-lg bg-accent-500/20 border border-accent-500/30 flex items-center justify-center">
-                <i class="fas fa-globe text-accent-400 text-sm"></i>
+                <img src="images/coding.png" alt="logo" class="w-5 h-5 object-contain"/>
             </div>
             <div>
                 <div class="text-white font-semibold text-sm leading-tight">Otwiine Olweny</div>
@@ -56,7 +57,7 @@
             <div class="flex items-center justify-between mb-8">
                 <div class="flex items-center gap-3">
                     <div class="w-9 h-9 rounded-lg bg-accent-500/20 border border-accent-500/30 flex items-center justify-center">
-                        <i class="fas fa-globe text-accent-400"></i>
+                        <img src="images/coding.png" alt="logo" class="w-5 h-5 object-contain"/>
                     </div>
                     <div>
                         <div class="text-white font-semibold text-sm">Otwiine Olweny</div>
@@ -66,27 +67,17 @@
                 <button id="mobileMenuClose" class="text-gray-400" aria-label="Close menu"><i class="fas fa-times"></i></button>
             </div>
             <nav class="flex-1 space-y-1">
-                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-th-large w-5 text-center"></i> Dashboard
-                </a>
-                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-user w-5 text-center"></i> About Me
-                </a>
-                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack
-                </a>
-                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-briefcase w-5 text-center"></i> Experience
-                </a>
-                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-envelope w-5 text-center"></i> Contact
-                </a>
+                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-th-large w-5 text-center"></i> Dashboard</a>
+                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-user w-5 text-center"></i> About Me</a>
+                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack</a>
+                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-briefcase w-5 text-center"></i> Experience</a>
+                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-envelope w-5 text-center"></i> Contact</a>
             </nav>
             <div class="pt-4 border-t border-base-500/30">
                 <div class="flex items-center gap-4 justify-center">
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                    <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                    <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 </div>
             </div>
         </div>
@@ -94,12 +85,10 @@
 
     <!-- Desktop Layout -->
     <div class="flex min-h-screen">
-
-        <!-- Sidebar -->
         <aside class="hidden lg:flex flex-col w-60 xl:w-64 fixed left-0 top-0 bottom-0 bg-base-800 border-r border-base-500/20 p-5 z-40">
             <div class="flex items-center gap-3 mb-8">
                 <div class="w-10 h-10 rounded-xl bg-accent-500/15 border border-accent-500/30 flex items-center justify-center">
-                    <i class="fas fa-globe text-accent-400 text-lg"></i>
+                    <img src="images/coding.png" alt="logo" class="w-6 h-6 object-contain"/>
                 </div>
                 <div>
                     <div class="text-white font-bold text-sm leading-tight">Otwiine Olweny</div>
@@ -108,147 +97,202 @@
             </div>
             <div class="text-[10px] font-mono text-slate-500 tracking-widest uppercase mb-3 px-3">Navigation</div>
             <nav class="flex-1 space-y-1">
-                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-th-large w-5 text-center text-base"></i> Dashboard
-                </a>
-                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-user w-5 text-center text-base"></i> About Me
-                </a>
-                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-chart-bar w-5 text-center text-base"></i> Tech Stack
-                </a>
-                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-briefcase w-5 text-center text-base"></i> Experience
-                </a>
-                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-envelope w-5 text-center text-base"></i> Contact
-                </a>
+                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-th-large w-5 text-center"></i> Dashboard</a>
+                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-user w-5 text-center"></i> About Me</a>
+                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack</a>
+                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-briefcase w-5 text-center"></i> Experience</a>
+                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-envelope w-5 text-center"></i> Contact</a>
             </nav>
             <div class="space-y-4">
                 <div class="flex items-center gap-4 justify-center pt-3 border-t border-base-500/20">
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                    <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                    <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 </div>
                 <div class="flex items-center gap-2 px-1">
                     <span class="w-2 h-2 rounded-full bg-accent-400"></span>
                     <span class="text-[11px] font-mono text-slate-400">SYSTEM ONLINE</span>
                 </div>
-                <div class="text-[11px] font-mono text-slate-500 px-1">2026-03-02</div>
             </div>
         </aside>
 
-        <!-- Main Content -->
         <main class="flex-1 lg:ml-60 xl:ml-64 min-h-screen grid-bg">
-
-            <!-- Top Bar -->
             <div class="sticky top-0 z-30 bg-base-900/80 backdrop-blur-md border-b border-base-500/15 px-4 sm:px-6 lg:px-8 py-3 hidden lg:flex items-center justify-between">
                 <div class="flex items-center gap-2 font-mono text-sm text-slate-400">
-                    <span class="text-slate-500">~/olweny</span>
+                    <span class="text-slate-500">~/otwiine</span>
                     <span class="text-slate-600">/</span>
                     <span class="text-gray-300" id="breadcrumb">tech-stack</span>
                     <span class="cursor-blink text-accent-400">&#9608;</span>
                 </div>
                 <div class="flex items-center gap-4 font-mono text-xs text-slate-500">
-                    <span>LAT: 0.3476°N</span>
-                    <span>LNG: 32.5825°E</span>
+                    <span>Kampala, Uganda</span>
                     <span class="flex items-center gap-1.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span>
-                        <span class="text-accent-400">SECURE</span>
+                        <span class="text-accent-400">ONLINE</span>
                     </span>
                 </div>
             </div>
 
-            <!-- Page Content -->
             <div class="px-4 sm:px-6 lg:px-8 py-6 lg:py-8 pt-20 lg:pt-8 pb-24 lg:pb-8">
-                <!-- TECH STACK -->
                 <div class="max-w-5xl">
                     <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2 fade-in-up">Tech <span class="text-accent-400">Stack</span></h1>
-                    <p class="text-slate-400 mb-8 fade-in-up">Tools, languages, and frameworks I work with daily.</p>
+                    <p class="text-slate-400 mb-8 fade-in-up">Check out the languages and tools I use — and what I'm learning next.</p>
 
-                    <div class="mb-8 fade-in-up delay-1">
-                        <div class="flex items-center gap-2 mb-4"><i class="fas fa-code text-accent-400"></i><h2 class="text-sm font-mono text-slate-500 tracking-widest uppercase">Languages</h2></div>
-                        <div class="grid sm:grid-cols-2 gap-3">
-                            <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover">
-                                <div class="flex items-center justify-between mb-2"><span class="text-sm font-semibold text-white">Python</span><span class="text-xs font-mono text-accent-400">95%</span></div>
-                                <div class="h-1.5 bg-base-700 rounded-full overflow-hidden"><div class="skill-bar h-full bg-gradient-to-r from-accent-500 to-accent-400 rounded-full" style="width: 95%"></div></div>
+                    <!-- Languages -->
+                    <div class="mb-10 fade-in-up delay-1">
+                        <div class="flex items-center gap-2 mb-5">
+                            <i class="fas fa-code text-accent-400"></i>
+                            <h2 class="text-sm font-mono text-slate-500 tracking-widest uppercase">Languages</h2>
+                        </div>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+
+                            <!-- Python -->
+                            <a href="https://www.python.org/doc/" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                     class="w-10 h-10 flex-shrink-0" alt="Python"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">Python</div>
+                                    <div class="text-xs text-accent-400 font-mono">Primary</div>
+                                </div>
+                            </a>
+
+                            <!-- Java -->
+                            <a href="https://docs.oracle.com/en/java/" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                                     class="w-10 h-10 flex-shrink-0" alt="Java"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">Java</div>
+                                    <div class="text-xs text-slate-400 font-mono">Proficient</div>
+                                </div>
+                            </a>
+
+                            <!-- JavaScript -->
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                     class="w-10 h-10 flex-shrink-0" alt="JavaScript"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">JavaScript</div>
+                                    <div class="text-xs text-slate-400 font-mono">Proficient</div>
+                                </div>
+                            </a>
+
+                            <!-- HTML -->
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                                     class="w-10 h-10 flex-shrink-0" alt="HTML5"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">HTML</div>
+                                    <div class="text-xs text-slate-400 font-mono">Proficient</div>
+                                </div>
+                            </a>
+
+                            <!-- CSS -->
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                     class="w-10 h-10 flex-shrink-0" alt="CSS3"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">CSS</div>
+                                    <div class="text-xs text-slate-400 font-mono">Proficient</div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Tools & IDEs -->
+                    <div class="mb-10 fade-in-up delay-2">
+                        <div class="flex items-center gap-2 mb-5">
+                            <i class="fas fa-wrench text-gold-400"></i>
+                            <h2 class="text-sm font-mono text-slate-500 tracking-widest uppercase">Tools &amp; IDEs</h2>
+                        </div>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+
+                            <!-- Git -->
+                            <a href="https://git-scm.com/doc" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                                     class="w-10 h-10 flex-shrink-0" alt="Git"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">Git</div>
+                                    <div class="text-xs text-slate-400 font-mono">Version Control</div>
+                                </div>
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/Otwiine" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github-dark.svg"
+                                     class="w-10 h-10 flex-shrink-0 invert opacity-80" alt="GitHub"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">GitHub</div>
+                                    <div class="text-xs text-slate-400 font-mono">Collaboration</div>
+                                </div>
+                            </a>
+
+                            <!-- VS Code -->
+                            <a href="https://code.visualstudio.com/docs" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                                     class="w-10 h-10 flex-shrink-0" alt="VS Code"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">VS Code</div>
+                                    <div class="text-xs text-slate-400 font-mono">Code Editor</div>
+                                </div>
+                            </a>
+
+                            <!-- IntelliJ -->
+                            <a href="https://www.jetbrains.com/help/idea/getting-started.html" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
+                                     class="w-10 h-10 flex-shrink-0" alt="IntelliJ IDEA"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">IntelliJ IDEA</div>
+                                    <div class="text-xs text-slate-400 font-mono">IDE</div>
+                                </div>
+                            </a>
+
+                            <!-- PyCharm -->
+                            <a href="https://www.jetbrains.com/pycharm/" target="_blank"
+                               class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-center gap-4 group">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg"
+                                     class="w-10 h-10 flex-shrink-0" alt="PyCharm"/>
+                                <div>
+                                    <div class="text-sm font-semibold text-white group-hover:text-accent-400 transition-colors">PyCharm</div>
+                                    <div class="text-xs text-slate-400 font-mono">Python IDE</div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- GIS - highlighted -->
+                    <div class="fade-in-up delay-3">
+                        <div class="flex items-center gap-2 mb-5">
+                            <i class="fas fa-globe text-accent-400"></i>
+                            <h2 class="text-sm font-mono text-slate-500 tracking-widest uppercase">GIS &amp; Geospatial (In Progress)</h2>
+                        </div>
+                        <div class="bg-base-800/40 rounded-2xl border border-accent-500/20 p-5">
+                            <p class="text-sm text-slate-300 mb-3">Currently studying GIS and AI/ML applied to satellite data at QSAIR. Tools and frameworks actively being learned:</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-4 py-2 rounded-lg bg-accent-500/10 border border-accent-500/20 text-sm text-accent-400 font-medium"
+                                      style="background-color:#fef08a;color:#1a1a1a;border-radius:4px;padding:6px 12px;">⚠️ Add GIS tools you've learned</span>
                             </div>
-                            <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover">
-                                <div class="flex items-center justify-between mb-2"><span class="text-sm font-semibold text-white">SQL / PostGIS</span><span class="text-xs font-mono text-accent-400">88%</span></div>
-                                <div class="h-1.5 bg-base-700 rounded-full overflow-hidden"><div class="skill-bar h-full bg-gradient-to-r from-accent-500 to-accent-400 rounded-full" style="width: 88%"></div></div>
-                            </div>
-                            <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover">
-                                <div class="flex items-center justify-between mb-2"><span class="text-sm font-semibold text-white">JavaScript</span><span class="text-xs font-mono text-teal-400">78%</span></div>
-                                <div class="h-1.5 bg-base-700 rounded-full overflow-hidden"><div class="skill-bar h-full bg-gradient-to-r from-teal-500 to-teal-400 rounded-full" style="width: 78%"></div></div>
-                            </div>
-                            <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover">
-                                <div class="flex items-center justify-between mb-2"><span class="text-sm font-semibold text-white">R</span><span class="text-xs font-mono text-teal-400">72%</span></div>
-                                <div class="h-1.5 bg-base-700 rounded-full overflow-hidden"><div class="skill-bar h-full bg-gradient-to-r from-teal-500 to-teal-400 rounded-full" style="width: 72%"></div></div>
-                            </div>
                         </div>
                     </div>
 
-                    <div class="mb-8 fade-in-up delay-2">
-                        <div class="flex items-center gap-2 mb-4"><i class="fas fa-globe text-accent-400"></i><h2 class="text-sm font-mono text-slate-500 tracking-widest uppercase">GIS &amp; Geospatial</h2></div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 rounded-lg bg-accent-500/10 border border-accent-500/20 text-sm text-accent-400 font-medium">ArcGIS Pro</span>
-                            <span class="px-4 py-2 rounded-lg bg-accent-500/10 border border-accent-500/20 text-sm text-accent-400 font-medium">QGIS</span>
-                            <span class="px-4 py-2 rounded-lg bg-accent-500/10 border border-accent-500/20 text-sm text-accent-400 font-medium">Google Earth Engine</span>
-                            <span class="px-4 py-2 rounded-lg bg-accent-500/10 border border-accent-500/20 text-sm text-accent-400 font-medium">PostGIS</span>
-                            <span class="px-4 py-2 rounded-lg bg-accent-500/10 border border-accent-500/20 text-sm text-accent-400 font-medium">GDAL/OGR</span>
-                            <span class="px-4 py-2 rounded-lg bg-accent-500/10 border border-accent-500/20 text-sm text-accent-400 font-medium">GeoPandas</span>
-                            <span class="px-4 py-2 rounded-lg bg-teal-500/10 border border-teal-500/20 text-sm text-teal-400 font-medium">Leaflet</span>
-                            <span class="px-4 py-2 rounded-lg bg-teal-500/10 border border-teal-500/20 text-sm text-teal-400 font-medium">Mapbox GL</span>
-                            <span class="px-4 py-2 rounded-lg bg-teal-500/10 border border-teal-500/20 text-sm text-teal-400 font-medium">Rasterio</span>
-                            <span class="px-4 py-2 rounded-lg bg-teal-500/10 border border-teal-500/20 text-sm text-teal-400 font-medium">Shapely</span>
-                        </div>
-                    </div>
-
-                    <div class="mb-8 fade-in-up delay-3">
-                        <div class="flex items-center gap-2 mb-4"><i class="fab fa-python text-accent-400"></i><h2 class="text-sm font-mono text-slate-500 tracking-widest uppercase">Python Ecosystem</h2></div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">NumPy</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Pandas</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Scikit-learn</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">TensorFlow</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Flask</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Django</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">FastAPI</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Matplotlib</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Folium</span>
-                        </div>
-                    </div>
-
-                    <div class="mb-8 fade-in-up delay-4">
-                        <div class="flex items-center gap-2 mb-4"><i class="fas fa-cloud text-accent-400"></i><h2 class="text-sm font-mono text-slate-500 tracking-widest uppercase">DevOps &amp; Cloud</h2></div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">AWS</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Docker</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Git</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">PostgreSQL</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Linux</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">CI/CD</span>
-                        </div>
-                    </div>
-
-                    <div class="fade-in-up delay-5">
-                        <div class="flex items-center gap-2 mb-4"><i class="fas fa-satellite text-accent-400"></i><h2 class="text-sm font-mono text-slate-500 tracking-widest uppercase">Remote Sensing</h2></div>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">ENVI</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">ERDAS IMAGINE</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Sentinel Hub</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Planet Labs</span>
-                            <span class="px-4 py-2 rounded-lg bg-base-700 border border-base-500/20 text-sm text-white">Pix4D</span>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <!-- Mobile Footer -->
             <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-base-800/95 backdrop-blur-sm border-t border-base-500/30 px-4 py-3 flex items-center justify-center gap-6 z-30">
-                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
-                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
-                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 <span class="text-[10px] font-mono text-slate-500 flex items-center gap-1.5 ml-4">
                     <span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span> ONLINE
                 </span>
