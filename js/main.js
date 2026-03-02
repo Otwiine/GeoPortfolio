@@ -22,12 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const breadcrumbEl = document.getElementById('breadcrumb');
     if (breadcrumbEl) {
         const map = {
-            'index.html': 'dashboard',
+            'index.html': 'home',
             'about.html': 'about',
             'techstack.html': 'tech-stack',
             'experience.html': 'experience',
             'contact.html': 'contact',
-            '': 'dashboard'
+            '': 'home'
         };
         breadcrumbEl.textContent = map[currentPage] || currentPage;
     }
