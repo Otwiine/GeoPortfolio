@@ -17,10 +17,6 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-@keyframes gridFlow {
-    0% { background-position: 0 0; }
-    100% { background-position: 40px 40px; }
-}
 
 .cursor-blink { animation: blink 1s step-end infinite; }
 .fade-in-up { animation: fadeInUp 0.5s ease-out forwards; opacity: 0; }
@@ -30,11 +26,35 @@
 .delay-4 { animation-delay: 0.4s; }
 .delay-5 { animation-delay: 0.5s; }
 
+/* ── Topo background: applied to body so it truly covers everything ── */
+body {
+    background-color: #0b1219;
+    background-image: url('../images/topo-pattern.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Dark overlay so content stays readable */
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: rgba(11, 18, 25, 0.82);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Ensure all direct children of body sit above overlay */
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* grid-bg no longer needs to carry the background */
 .grid-bg {
-    background-image: 
-        linear-gradient(rgba(34,197,94,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(34,197,94,0.03) 1px, transparent 1px);
-    background-size: 40px 40px;
+    background: transparent;
 }
 
 .nav-item { transition: all 0.2s ease; }
@@ -59,3 +79,6 @@
 }
 
 .skill-bar { transition: width 1s ease-out; }
+
+/* Tech icon sizing fix */
+.tech-icon { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0; }

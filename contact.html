@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/png" href="images/coding.png"/>
     <script>
         tailwind.config = {
             theme: {
@@ -37,7 +38,7 @@
     <header class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-base-800/95 backdrop-blur-sm border-b border-base-500/30 px-4 py-3 flex items-center justify-between">
         <div class="flex items-center gap-3">
             <div class="w-8 h-8 rounded-lg bg-accent-500/20 border border-accent-500/30 flex items-center justify-center">
-                <i class="fas fa-globe text-accent-400 text-sm"></i>
+                <img src="images/coding.png" alt="logo" class="w-5 h-5 object-contain" />
             </div>
             <div>
                 <div class="text-white font-semibold text-sm leading-tight">Otwiine Olweny</div>
@@ -56,7 +57,7 @@
             <div class="flex items-center justify-between mb-8">
                 <div class="flex items-center gap-3">
                     <div class="w-9 h-9 rounded-lg bg-accent-500/20 border border-accent-500/30 flex items-center justify-center">
-                        <i class="fas fa-globe text-accent-400"></i>
+                        <img src="images/coding.png" alt="logo" class="w-5 h-5 object-contain" />
                     </div>
                     <div>
                         <div class="text-white font-semibold text-sm">Otwiine Olweny</div>
@@ -66,27 +67,17 @@
                 <button id="mobileMenuClose" class="text-gray-400" aria-label="Close menu"><i class="fas fa-times"></i></button>
             </div>
             <nav class="flex-1 space-y-1">
-                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-th-large w-5 text-center"></i> Dashboard
-                </a>
-                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-user w-5 text-center"></i> About Me
-                </a>
-                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack
-                </a>
-                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-briefcase w-5 text-center"></i> Experience
-                </a>
-                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-envelope w-5 text-center"></i> Contact
-                </a>
+                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-th-large w-5 text-center"></i> Dashboard</a>
+                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-user w-5 text-center"></i> About Me</a>
+                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack</a>
+                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-briefcase w-5 text-center"></i> Experience</a>
+                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-envelope w-5 text-center"></i> Contact</a>
             </nav>
             <div class="pt-4 border-t border-base-500/30">
                 <div class="flex items-center gap-4 justify-center">
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                    <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                    <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 </div>
             </div>
         </div>
@@ -94,12 +85,10 @@
 
     <!-- Desktop Layout -->
     <div class="flex min-h-screen">
-
-        <!-- Sidebar -->
         <aside class="hidden lg:flex flex-col w-60 xl:w-64 fixed left-0 top-0 bottom-0 bg-base-800 border-r border-base-500/20 p-5 z-40">
             <div class="flex items-center gap-3 mb-8">
                 <div class="w-10 h-10 rounded-xl bg-accent-500/15 border border-accent-500/30 flex items-center justify-center">
-                    <i class="fas fa-globe text-accent-400 text-lg"></i>
+                    <img src="images/coding.png" alt="logo" class="w-6 h-6 object-contain" />
                 </div>
                 <div>
                     <div class="text-white font-bold text-sm leading-tight">Otwiine Olweny</div>
@@ -108,82 +97,92 @@
             </div>
             <div class="text-[10px] font-mono text-slate-500 tracking-widest uppercase mb-3 px-3">Navigation</div>
             <nav class="flex-1 space-y-1">
-                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-th-large w-5 text-center text-base"></i> Dashboard
-                </a>
-                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-user w-5 text-center text-base"></i> About Me
-                </a>
-                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-chart-bar w-5 text-center text-base"></i> Tech Stack
-                </a>
-                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-briefcase w-5 text-center text-base"></i> Experience
-                </a>
-                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
-                    <i class="fas fa-envelope w-5 text-center text-base"></i> Contact
-                </a>
+                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-th-large w-5 text-center"></i> Dashboard</a>
+                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-user w-5 text-center"></i> About Me</a>
+                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack</a>
+                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-briefcase w-5 text-center"></i> Experience</a>
+                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><i class="fas fa-envelope w-5 text-center"></i> Contact</a>
             </nav>
             <div class="space-y-4">
                 <div class="flex items-center gap-4 justify-center pt-3 border-t border-base-500/20">
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
-                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                    <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                    <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 </div>
                 <div class="flex items-center gap-2 px-1">
                     <span class="w-2 h-2 rounded-full bg-accent-400"></span>
                     <span class="text-[11px] font-mono text-slate-400">SYSTEM ONLINE</span>
                 </div>
-                <div class="text-[11px] font-mono text-slate-500 px-1">2026-03-02</div>
             </div>
         </aside>
 
-        <!-- Main Content -->
         <main class="flex-1 lg:ml-60 xl:ml-64 min-h-screen grid-bg">
-
-            <!-- Top Bar -->
             <div class="sticky top-0 z-30 bg-base-900/80 backdrop-blur-md border-b border-base-500/15 px-4 sm:px-6 lg:px-8 py-3 hidden lg:flex items-center justify-between">
                 <div class="flex items-center gap-2 font-mono text-sm text-slate-400">
-                    <span class="text-slate-500">~/olweny</span>
+                    <span class="text-slate-500">~/otwiine</span>
                     <span class="text-slate-600">/</span>
                     <span class="text-gray-300" id="breadcrumb">contact</span>
                     <span class="cursor-blink text-accent-400">&#9608;</span>
                 </div>
                 <div class="flex items-center gap-4 font-mono text-xs text-slate-500">
-                    <span>LAT: 0.3476°N</span>
-                    <span>LNG: 32.5825°E</span>
+                    <span>Kampala, Uganda</span>
                     <span class="flex items-center gap-1.5">
                         <span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span>
-                        <span class="text-accent-400">SECURE</span>
+                        <span class="text-accent-400">ONLINE</span>
                     </span>
                 </div>
             </div>
-
-            <!-- Page Content -->
             <div class="px-4 sm:px-6 lg:px-8 py-6 lg:py-8 pt-20 lg:pt-8 pb-24 lg:pb-8">
-                <!-- CONTACT -->
                 <div class="max-w-3xl">
                     <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2 fade-in-up">Get in <span class="text-accent-400">Touch</span></h1>
-                    <p class="text-slate-400 mb-8 fade-in-up">Have a geospatial challenge? Let's discuss how I can help.</p>
+                    <p class="text-slate-400 mb-8 fade-in-up">Want to connect or collaborate? Reach out!</p>
 
-                    <div class="grid sm:grid-cols-3 gap-3 mb-8 fade-in-up delay-1">
-                        <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-5 card-hover text-center">
-                            <div class="w-10 h-10 rounded-lg bg-accent-500/15 border border-accent-500/20 flex items-center justify-center mx-auto mb-3"><i class="fas fa-envelope text-accent-400"></i></div>
-                            <div class="text-xs text-slate-500 font-mono mb-1">EMAIL</div>
-                            <div class="text-sm text-white">contact@olweny.dev</div>
-                        </div>
-                        <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-5 card-hover text-center">
-                            <div class="w-10 h-10 rounded-lg bg-teal-500/15 border border-teal-500/20 flex items-center justify-center mx-auto mb-3"><i class="fas fa-map-marker-alt text-teal-400"></i></div>
-                            <div class="text-xs text-slate-500 font-mono mb-1">LOCATION</div>
-                            <div class="text-sm text-white">Available Worldwide</div>
-                        </div>
-                        <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-5 card-hover text-center">
-                            <div class="w-10 h-10 rounded-lg bg-gold-500/15 border border-gold-500/20 flex items-center justify-center mx-auto mb-3"><i class="fas fa-clock text-gold-400"></i></div>
-                            <div class="text-xs text-slate-500 font-mono mb-1">RESPONSE</div>
-                            <div class="text-sm text-white">Within 24 hours</div>
+                    <!-- Open to working on -->
+                    <div class="bg-base-800/40 rounded-2xl border border-accent-500/20 p-5 mb-6 fade-in-up">
+                        <div class="text-sm font-semibold text-white mb-3">I'm open to working on:</div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-accent-500/10 border border-accent-500/20 text-xs text-accent-400">Python Projects</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-accent-500/10 border border-accent-500/20 text-xs text-accent-400">GIS Projects</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-accent-500/10 border border-accent-500/20 text-xs text-accent-400">Business Websites</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-accent-500/10 border border-accent-500/20 text-xs text-accent-400">Portfolio Sites</span>
                         </div>
                     </div>
 
+                    <!-- Contact cards -->
+                    <div class="grid sm:grid-cols-3 gap-3 mb-8 fade-in-up delay-1">
+                        <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-5 card-hover text-center">
+                            <div class="w-10 h-10 rounded-lg bg-accent-500/15 border border-accent-500/20 flex items-center justify-center mx-auto mb-3">
+                                <i class="fas fa-envelope text-accent-400"></i>
+                            </div>
+                            <div class="text-xs text-slate-500 font-mono mb-1">EMAIL</div>
+                            <a href="mailto:otwiine@gmail.com" class="text-sm text-white hover:text-accent-400 transition-colors">otwiine@gmail.com</a>
+                        </div>
+                        <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-5 card-hover text-center">
+                            <div class="w-10 h-10 rounded-lg bg-teal-500/15 border border-teal-500/20 flex items-center justify-center mx-auto mb-3">
+                                <i class="fab fa-github text-teal-400"></i>
+                            </div>
+                            <div class="text-xs text-slate-500 font-mono mb-1">GITHUB</div>
+                            <a href="https://github.com/Otwiine" target="_blank" class="text-sm text-white hover:text-teal-400 transition-colors">Otwiine</a>
+                        </div>
+                        <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-5 card-hover text-center">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/15 border border-gold-500/20 flex items-center justify-center mx-auto mb-3">
+                                <i class="fab fa-x-twitter text-gold-400"></i>
+                            </div>
+                            <div class="text-xs text-slate-500 font-mono mb-1">X / TWITTER</div>
+                            <a href="https://x.com/Mr_OJO16" target="_blank" class="text-sm text-white hover:text-gold-400 transition-colors">@Mr_OJO16</a>
+                        </div>
+                    </div>
+
+                    <!-- Instagram note -->
+                    <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 mb-8 fade-in-up delay-1 flex items-center gap-3">
+                        <i class="fab fa-instagram text-pink-400 text-xl"></i>
+                        <div>
+                            <div class="text-sm text-white">Want a look into my daily life?</div>
+                            <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-xs text-accent-400 hover:underline">@otwiine on Instagram ↗</a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
                     <div class="bg-base-800/50 rounded-2xl border border-base-500/20 p-6 sm:p-8 fade-in-up delay-2">
                         <form id="contactForm" class="space-y-5">
                             <div class="grid sm:grid-cols-2 gap-4">
@@ -199,12 +198,12 @@
                             <div>
                                 <label class="block text-xs font-mono text-slate-500 mb-2 tracking-wider uppercase">Subject</label>
                                 <select class="w-full px-4 py-3 bg-base-700 border border-base-500/30 rounded-lg text-sm text-white focus:outline-none focus:border-accent-500/50 transition-colors appearance-none">
-                                    <option value="" class="bg-base-700">Select a topic</option>
-                                    <option value="gis" class="bg-base-700">GIS Project</option>
-                                    <option value="remote" class="bg-base-700">Remote Sensing</option>
-                                    <option value="python" class="bg-base-700">Python Development</option>
-                                    <option value="consulting" class="bg-base-700">Consulting</option>
-                                    <option value="other" class="bg-base-700">Other</option>
+                                    <option value="">Select a topic</option>
+                                    <option value="python">Python Project</option>
+                                    <option value="gis">GIS Project</option>
+                                    <option value="web">Website</option>
+                                    <option value="collab">Collaboration</option>
+                                    <option value="other">Other</option>
                                 </select>
                             </div>
                             <div>
@@ -220,24 +219,21 @@
                                 <i class="fas fa-check text-accent-400 text-2xl"></i>
                             </div>
                             <h3 class="text-lg font-bold text-white mb-2">Message Sent!</h3>
-                            <p class="text-sm text-slate-400">Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                            <p class="text-sm text-slate-400">Thank you for reaching out. I'll get back to you as soon as possible.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Mobile Footer -->
             <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-base-800/95 backdrop-blur-sm border-t border-base-500/30 px-4 py-3 flex items-center justify-center gap-6 z-30">
-                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
-                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
-                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
+                <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 <span class="text-[10px] font-mono text-slate-500 flex items-center gap-1.5 ml-4">
                     <span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span> ONLINE
                 </span>
             </div>
         </main>
     </div>
-
     <script src="js/main.js"></script>
 </body>
 </html>
