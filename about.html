@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About — Otwiine Olweny</title>
+    <meta name="description" content="Learn about Otwiine Olweny, geospatial intelligence professional."/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        base: { 900: '#0b1219', 800: '#0f1923', 700: '#151f2b', 600: '#1a2736', 500: '#1e2d3d' },
+                        accent: { 400: '#4ade80', 500: '#22c55e', 600: '#16a34a' },
+                        teal: { 400: '#2dd4bf', 500: '#14b8a6' },
+                        gold: { 400: '#fbbf24', 500: '#f59e0b' },
+                        slate: { 300: '#94a3b8', 400: '#64748b', 500: '#475569' }
+                    },
+                    fontFamily: {
+                        mono: ['JetBrains Mono', 'monospace'],
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="bg-base-900 text-gray-300 font-sans min-h-screen">
+
+    <!-- Mobile Header -->
+    <header class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-base-800/95 backdrop-blur-sm border-b border-base-500/30 px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-accent-500/20 border border-accent-500/30 flex items-center justify-center">
+                <i class="fas fa-globe text-accent-400 text-sm"></i>
+            </div>
+            <div>
+                <div class="text-white font-semibold text-sm leading-tight">Otwiine Olweny</div>
+                <div class="text-[10px] text-slate-400 font-mono tracking-widest uppercase">PORTFOLIO</div>
+            </div>
+        </div>
+        <button id="mobileMenuBtn" class="w-9 h-9 rounded-lg bg-base-700 border border-base-500/30 flex items-center justify-center" aria-label="Toggle menu">
+            <i class="fas fa-bars text-gray-400 text-sm"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobileMenu" class="lg:hidden fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-black/60" id="mobileMenuOverlay"></div>
+        <div class="absolute left-0 top-0 bottom-0 w-64 bg-base-800 border-r border-base-500/30 p-5 flex flex-col">
+            <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-accent-500/20 border border-accent-500/30 flex items-center justify-center">
+                        <i class="fas fa-globe text-accent-400"></i>
+                    </div>
+                    <div>
+                        <div class="text-white font-semibold text-sm">Otwiine Olweny</div>
+                        <div class="text-[10px] text-slate-400 font-mono tracking-widest">PORTFOLIO</div>
+                    </div>
+                </div>
+                <button id="mobileMenuClose" class="text-gray-400" aria-label="Close menu"><i class="fas fa-times"></i></button>
+            </div>
+            <nav class="flex-1 space-y-1">
+                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-th-large w-5 text-center"></i> Dashboard
+                </a>
+                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-user w-5 text-center"></i> About Me
+                </a>
+                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-chart-bar w-5 text-center"></i> Tech Stack
+                </a>
+                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-briefcase w-5 text-center"></i> Experience
+                </a>
+                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-envelope w-5 text-center"></i> Contact
+                </a>
+            </nav>
+            <div class="pt-4 border-t border-base-500/30">
+                <div class="flex items-center gap-4 justify-center">
+                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop Layout -->
+    <div class="flex min-h-screen">
+
+        <!-- Sidebar -->
+        <aside class="hidden lg:flex flex-col w-60 xl:w-64 fixed left-0 top-0 bottom-0 bg-base-800 border-r border-base-500/20 p-5 z-40">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-10 h-10 rounded-xl bg-accent-500/15 border border-accent-500/30 flex items-center justify-center">
+                    <i class="fas fa-globe text-accent-400 text-lg"></i>
+                </div>
+                <div>
+                    <div class="text-white font-bold text-sm leading-tight">Otwiine Olweny</div>
+                    <div class="text-[10px] text-slate-400 font-mono tracking-[0.2em] uppercase">PORTFOLIO</div>
+                </div>
+            </div>
+            <div class="text-[10px] font-mono text-slate-500 tracking-widest uppercase mb-3 px-3">Navigation</div>
+            <nav class="flex-1 space-y-1">
+                <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-th-large w-5 text-center text-base"></i> Dashboard
+                </a>
+                <a href="about.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-user w-5 text-center text-base"></i> About Me
+                </a>
+                <a href="techstack.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-chart-bar w-5 text-center text-base"></i> Tech Stack
+                </a>
+                <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-briefcase w-5 text-center text-base"></i> Experience
+                </a>
+                <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300">
+                    <i class="fas fa-envelope w-5 text-center text-base"></i> Contact
+                </a>
+            </nav>
+            <div class="space-y-4">
+                <div class="flex items-center gap-4 justify-center pt-3 border-t border-base-500/20">
+                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                </div>
+                <div class="flex items-center gap-2 px-1">
+                    <span class="w-2 h-2 rounded-full bg-accent-400"></span>
+                    <span class="text-[11px] font-mono text-slate-400">SYSTEM ONLINE</span>
+                </div>
+                <div class="text-[11px] font-mono text-slate-500 px-1">2026-03-02</div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 lg:ml-60 xl:ml-64 min-h-screen grid-bg">
+
+            <!-- Top Bar -->
+            <div class="sticky top-0 z-30 bg-base-900/80 backdrop-blur-md border-b border-base-500/15 px-4 sm:px-6 lg:px-8 py-3 hidden lg:flex items-center justify-between">
+                <div class="flex items-center gap-2 font-mono text-sm text-slate-400">
+                    <span class="text-slate-500">~/olweny</span>
+                    <span class="text-slate-600">/</span>
+                    <span class="text-gray-300" id="breadcrumb">about</span>
+                    <span class="cursor-blink text-accent-400">&#9608;</span>
+                </div>
+                <div class="flex items-center gap-4 font-mono text-xs text-slate-500">
+                    <span>LAT: 0.3476°N</span>
+                    <span>LNG: 32.5825°E</span>
+                    <span class="flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span>
+                        <span class="text-accent-400">SECURE</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Page Content -->
+            <div class="px-4 sm:px-6 lg:px-8 py-6 lg:py-8 pt-20 lg:pt-8 pb-24 lg:pb-8">
+                <!-- ABOUT -->
+                <div class="max-w-5xl">
+                    <div class="grid lg:grid-cols-3 gap-6 mb-8 fade-in-up">
+                        <div class="lg:col-span-2 bg-base-800/50 rounded-2xl border border-base-500/20 p-6 sm:p-8">
+                            <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2">About <span class="text-accent-400">Me</span></h1>
+                            <p class="text-slate-300 leading-relaxed mt-4 mb-6">
+                                Python programmer and geospatial intelligence professional with 7+ years of experience
+                                transforming spatial data into actionable intelligence. I specialize in bridging the gap
+                                between raw geospatial data and strategic decision-making, working across defense,
+                                environmental, and urban planning domains.
+                            </p>
+                            <div class="flex flex-wrap gap-4 text-sm text-slate-400">
+                                <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-accent-400"></i> Available Worldwide</span>
+                                <span class="flex items-center gap-2"><i class="fas fa-envelope text-accent-400"></i> contact@olweny.dev</span>
+                            </div>
+                        </div>
+                        <div class="bg-base-800/50 rounded-2xl border border-base-500/20 p-6 grid grid-cols-2 gap-4">
+                            <div class="text-center"><div class="text-3xl font-bold text-accent-400">18</div><div class="text-xs text-slate-500 font-mono mt-1">Projects</div></div>
+                            <div class="text-center"><div class="text-3xl font-bold text-accent-400">7</div><div class="text-xs text-slate-500 font-mono mt-1">Years</div></div>
+                            <div class="text-center"><div class="text-3xl font-bold text-accent-400">14</div><div class="text-xs text-slate-500 font-mono mt-1">Countries</div></div>
+                            <div class="text-center"><div class="text-3xl font-bold text-gold-400">24</div><div class="text-xs text-slate-500 font-mono mt-1">Tools</div></div>
+                        </div>
+                    </div>
+                    <div class="grid lg:grid-cols-2 gap-6 mb-8 fade-in-up delay-1">
+                        <div class="bg-base-800/40 rounded-2xl border border-base-500/15 p-6">
+                            <div class="flex items-center gap-2 mb-5">
+                                <i class="fas fa-graduation-cap text-accent-400"></i>
+                                <span class="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Education</span>
+                            </div>
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="text-sm font-bold text-white">MSc Geospatial Intelligence</div>
+                                    <div class="text-xs text-slate-400">Cranfield University · 2018</div>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-bold text-white">BSc Geographic Information Science</div>
+                                    <div class="text-xs text-slate-400">University of Leeds · 2016</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-base-800/40 rounded-2xl border border-base-500/15 p-6">
+                            <div class="flex items-center gap-2 mb-5">
+                                <i class="fas fa-certificate text-accent-400"></i>
+                                <span class="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Certifications</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-2 text-sm"><span class="w-2 h-2 rounded-full bg-accent-400"></span><span class="text-white">Esri ArcGIS Desktop Professional</span></div>
+                                <div class="flex items-center gap-2 text-sm"><span class="w-2 h-2 rounded-full bg-accent-400"></span><span class="text-white">Google Earth Engine Certified Developer</span></div>
+                                <div class="flex items-center gap-2 text-sm"><span class="w-2 h-2 rounded-full bg-accent-400"></span><span class="text-white">GISCI Certified GIS Professional (GISP)</span></div>
+                                <div class="flex items-center gap-2 text-sm"><span class="w-2 h-2 rounded-full bg-accent-400"></span><span class="text-white">CompTIA Security+ (DoD 8570)</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-base-800/40 rounded-2xl border border-base-500/15 p-6 fade-in-up delay-2">
+                        <div class="flex items-center gap-2 mb-5">
+                            <i class="fas fa-heart text-red-400"></i>
+                            <span class="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Interests</span>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Open Source GIS</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Drone Mapping</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Satellite Imagery</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Python Automation</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Machine Learning</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Climate Tech</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Web Mapping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Footer -->
+            <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-base-800/95 backdrop-blur-sm border-t border-base-500/30 px-4 py-3 flex items-center justify-center gap-6 z-30">
+                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="GitHub"><i class="fab fa-github text-lg"></i></a>
+                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Instagram"><i class="fab fa-instagram text-lg"></i></a>
+                <a href="#" class="text-slate-400 hover:text-accent-400 transition-colors" aria-label="Twitter"><i class="fab fa-x-twitter text-lg"></i></a>
+                <span class="text-[10px] font-mono text-slate-500 flex items-center gap-1.5 ml-4">
+                    <span class="w-1.5 h-1.5 rounded-full bg-accent-400"></span> ONLINE
+                </span>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
