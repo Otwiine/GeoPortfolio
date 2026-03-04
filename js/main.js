@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // ── Active nav highlight — works locally and on GitHub Pages ──
-    const path = window.location.pathname;
-    const currentPage = path.split('/').pop() || 'index.html';
-    const resolvedPage = currentPage === '' || currentPage === '/' ? 'index.html' : currentPage;
+    // ── Active nav highlight ──
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const resolvedPage = (currentPage === '' || currentPage === '/') ? 'index.html' : currentPage;
 
     document.querySelectorAll('.nav-item').forEach(item => {
         const href = item.getAttribute('href');
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             item.classList.add('active', 'text-accent-400');
             item.classList.remove('text-slate-300');
             const dot = document.createElement('span');
-            dot.className = 'nav-dot ml-auto w-2 h-2 rounded-full bg-accent-400 flex-shrink-0';
+            dot.className = 'nav-dot';
             item.appendChild(dot);
         }
     });
