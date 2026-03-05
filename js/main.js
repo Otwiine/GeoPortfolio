@@ -57,15 +57,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contactForm');
     const contactSuccess = document.getElementById('contactSuccess');
     if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
+        contactForm.addEventListener('submit', async function (e) {
             e.preventDefault();
-            contactForm.classList.add('hidden');
-            contactSuccess.classList.remove('hidden');
-            setTimeout(() => {
-                contactForm.classList.remove('hidden');
-                contactSuccess.classList.add('hidden');
-                contactForm.reset();
-            }, 4000);
+            const data = new FormData(contactForm);
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (response.ok) {
+                    contactForm.classList.add('hidden');
+                    contactSuccess.classList.remove('hidden');
+                    setTimeout(() => {
+                        contactForm.classList.remove('hidden');
+                        contactSuccess.classList.add('hidden');
+                        contactForm.reset();
+                    }, 4000);
+                } else {
+                    alert('Something went wrong. Please try again.');
+                }
+            } catch {
+                alert('Something went wrong. Please try again.');
+            }
         });
     }
 });
