@@ -75,11 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (response.status === 200) {
                     contactForm.classList.add('hidden');
                     contactSuccess.classList.remove('hidden');
-                    setTimeout(() => {
-                        contactForm.classList.remove('hidden');
-                        contactSuccess.classList.add('hidden');
-                        contactForm.reset();
-                    }, 4000);
                 } else {
                     alert(result.message || 'Something went wrong. Please try again.');
                 }
