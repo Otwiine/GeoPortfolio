@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'index.html': 'home',
             'about.html': 'about',
             'techstack.html': 'tech-stack',
-            'experience.html': 'experience',
+            'experience.html': 'projects & experience',
             'contact.html': 'contact',
             '': 'home'
         };
@@ -57,16 +57,22 @@ document.addEventListener('DOMContentLoaded', function () {
     const contactForm = document.getElementById('contactForm');
     const contactSuccess = document.getElementById('contactSuccess');
     if (contactForm) {
-        contactForm.addEventListener('submit', async function (e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            const data = new FormData(contactForm);
-            try {
-                const response = await fetch('https://api.web3forms.com/submit', {
-                    method: 'POST',
-                    body: data
-                });
+            const formData = new FormData(contactForm);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
                 const result = await response.json();
-                if (result.success) {
+                if (response.status === 200) {
                     contactForm.classList.add('hidden');
                     contactSuccess.classList.remove('hidden');
                     setTimeout(() => {
@@ -75,11 +81,12 @@ document.addEventListener('DOMContentLoaded', function () {
                         contactForm.reset();
                     }, 4000);
                 } else {
-                    alert('Something went wrong. Please try again.');
+                    alert(result.message || 'Something went wrong. Please try again.');
                 }
-            } catch {
+            })
+            .catch(() => {
                 alert('Something went wrong. Please try again.');
-            }
+            });
         });
     }
 });
