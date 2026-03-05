@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             const data = new FormData(contactForm);
             try {
-                const response = await fetch(contactForm.action, {
+                const response = await fetch('https://api.web3forms.com/submit', {
                     method: 'POST',
-                    body: data,
-                    headers: { 'Accept': 'application/json' }
+                    body: data
                 });
-                if (response.ok) {
+                const result = await response.json();
+                if (result.success) {
                     contactForm.classList.add('hidden');
                     contactSuccess.classList.remove('hidden');
                     setTimeout(() => {
