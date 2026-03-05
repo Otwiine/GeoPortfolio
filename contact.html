@@ -155,7 +155,15 @@
                                 <i class="fas fa-envelope text-accent-400"></i>
                             </div>
                             <div class="text-xs text-slate-500 font-mono mb-1">EMAIL</div>
-                            <a href="/cdn-cgi/l/email-protection#731c07041a1a1d1633141e121a1f5d101c1e" class="hover:text-accent-400 transition-colors"><span class="__cf_email__" data-cfemail="761902011f1f181336111b171f1a5815191b">[email&#160;protected]</span></a>
+                            <a id="contact-email-link" class="hover:text-accent-400 transition-colors"></a>
+                            <script>
+                                (function(){
+                                    var u = 'otwiine', d = 'gmail.com';
+                                    var el = document.getElementById('contact-email-link');
+                                    el.href = 'mailto:' + u + '@' + d;
+                                    el.textContent = u + '@' + d;
+                                })();
+                            </script>
                         </div>
                         <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-5 card-hover text-center">
                             <div class="w-10 h-10 rounded-lg bg-teal-500/15 border border-teal-500/20 flex items-center justify-center mx-auto mb-3">
