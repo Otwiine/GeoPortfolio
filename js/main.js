@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'index.html': 'home',
             'about.html': 'about',
             'techstack.html': 'tech-stack',
-            'experience.html': 'projects & experience',
+            'experience.html': 'experience',
             'contact.html': 'contact',
             '': 'home'
         };
