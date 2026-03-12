@@ -36,7 +36,7 @@
 
     <!-- Mobile Header -->
     <header class="lg:hidden fixed top-0 left-0 right-0 z-50 bg-base-800/95 backdrop-blur-sm border-b border-base-500/30 px-4 py-3 flex items-center justify-between">
-        <div class="flex items-center gap-3">
+        <a href="index.html" class="flex items-center gap-3">
             <div class="w-8 h-8 rounded-lg bg-accent-500/20 border border-accent-500/30 flex items-center justify-center">
                 <img src="images/coding.png" alt="logo" class="w-5 h-5 object-contain" />
             </div>
@@ -44,7 +44,7 @@
                 <div class="text-white font-semibold text-sm leading-tight">Otwiine Olweny</div>
                 <div class="text-[10px] text-slate-400 font-mono tracking-widest uppercase">PORTFOLIO</div>
             </div>
-        </div>
+        </a>
         <button id="mobileMenuBtn" class="w-9 h-9 rounded-lg bg-base-700 border border-base-500/30 flex items-center justify-center" aria-label="Toggle menu">
             <i class="fas fa-bars text-gray-400 text-sm"></i>
         </button>
@@ -86,7 +86,7 @@
     <!-- Desktop Layout -->
     <div class="flex min-h-screen">
         <aside class="hidden lg:flex flex-col w-60 xl:w-64 fixed left-0 top-0 bottom-0 bg-base-800 border-r border-base-500/20 p-5 z-40">
-            <div class="flex items-center gap-3 mb-8">
+            <a href="index.html" class="flex items-center gap-3 mb-8">
                 <div class="w-10 h-10 rounded-xl bg-accent-500/15 border border-accent-500/30 flex items-center justify-center">
                     <img src="images/coding.png" alt="logo" class="w-6 h-6 object-contain" />
                 </div>
@@ -94,7 +94,7 @@
                     <div class="text-white font-bold text-sm leading-tight">Otwiine Olweny</div>
                     <div class="text-[10px] text-slate-400 font-mono tracking-[0.2em] uppercase">PORTFOLIO</div>
                 </div>
-            </div>
+            </a>
             <div class="text-[10px] font-mono text-slate-500 tracking-widest uppercase mb-3 px-3">Navigation</div>
             <nav class="flex-1 space-y-1">
                 <a href="index.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><span class="flex items-center gap-3"><i class="fas fa-home"></i> Home</span></a>
@@ -104,7 +104,15 @@
                 <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><span class="flex items-center gap-3"><i class="fas fa-envelope"></i> Contact</span></a>
             </nav>
             <div class="space-y-4">
-                <div class="flex items-center gap-4 justify-center pt-3 border-t border-base-500/20">
+                <!-- Kampala Clock -->
+                <div class="pt-3 border-t border-base-500/20">
+                    <div class="text-[10px] font-mono text-slate-500 tracking-widest uppercase mb-2 px-1">Kampala Time</div>
+                    <div class="bg-base-900/60 rounded-lg border border-base-500/20 px-3 py-2.5 font-mono">
+                        <div class="text-accent-400 text-sm font-semibold tracking-widest" id="kla-time">--:--:--</div>
+                        <div class="text-slate-500 text-[10px] mt-0.5" id="kla-date">--- -- ----</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 justify-center pt-1 border-t border-base-500/20">
                     <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
                     <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
                     <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
@@ -114,6 +122,24 @@
                     <span class="text-[11px] font-mono text-slate-400">SYSTEM ONLINE</span>
                 </div>
             </div>
+            <script>
+            (function(){
+                function updateClock(){
+                    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Africa/Kampala'}));
+                    var h=String(now.getHours()).padStart(2,'0');
+                    var m=String(now.getMinutes()).padStart(2,'0');
+                    var s=String(now.getSeconds()).padStart(2,'0');
+                    var days=['SUN','MON','TUE','WED','THU','FRI','SAT'];
+                    var months=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+                    var t=document.getElementById('kla-time');
+                    var d=document.getElementById('kla-date');
+                    if(t)t.textContent=h+':'+m+':'+s;
+                    if(d)d.textContent=days[now.getDay()]+' '+String(now.getDate()).padStart(2,'0')+' '+months[now.getMonth()]+' '+now.getFullYear();
+                }
+                updateClock();
+                setInterval(updateClock,1000);
+            })();
+            </script>
         </aside>
 
         <main class="flex-1 lg:ml-60 xl:ml-64 min-h-screen grid-bg">
