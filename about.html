@@ -205,36 +205,78 @@
                         </div>
                     </div>
 
-                    <!-- Education -->
-                    <div class="grid lg:grid-cols-2 gap-6 mb-8 fade-in-up delay-1">
-                        <div class="bg-base-800/40 rounded-2xl border border-base-500/15 p-6">
-                            <div class="flex items-center gap-2 mb-5">
-                                <i class="fas fa-graduation-cap text-accent-400"></i>
-                                <span class="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Education</span>
+                    <!-- Education + CodeHub row -->
+                    <div class="grid lg:grid-cols-2 gap-6 mb-6 fade-in-up delay-1">
+                        <!-- Education + Certifications stacked -->
+                        <div class="space-y-6">
+                            <div class="bg-base-800/40 rounded-2xl border border-base-500/15 p-6">
+                                <div class="flex items-center gap-2 mb-5">
+                                    <i class="fas fa-graduation-cap text-accent-400"></i>
+                                    <span class="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Education</span>
+                                </div>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="text-sm font-bold text-white">GIS &amp; AI/ML in Satellite Data Analysis</div>
+                                        <div class="text-xs text-slate-400">QSAIR (Quantum School of AI &amp; Robotics) · Current</div>
+                                    </div>
+                                    <div>
+                                        <div class="text-sm font-bold text-white">High School</div>
+                                        <div class="text-xs text-slate-400">Kabojja International School · Kampala, Uganda</div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="space-y-4">
-                                <div>
-                                    <div class="text-sm font-bold text-white">GIS &amp; AI/ML in Satellite Data Analysis</div>
-                                    <div class="text-xs text-slate-400">QSAIR (Quantum School of AI &amp; Robotics) · Current</div>
+                            <!-- Certifications (hidden until available)
+                            <div class="bg-base-800/40 rounded-2xl border border-base-500/15 p-6">
+                                <div class="flex items-center gap-2 mb-5">
+                                    <i class="fas fa-certificate text-accent-400"></i>
+                                    <span class="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Certifications</span>
                                 </div>
-                                <div>
-                                    <div class="text-sm font-bold text-white">High School</div>
-                                    <div class="text-xs text-slate-400">Kabojja International School · Kampala, Uganda</div>
+                                <div class="space-y-3">
+                                    <div class="flex items-center gap-2 text-sm"><span class="w-2 h-2 rounded-full bg-accent-400"></span><span class="text-white">Certification 1</span></div>
+                                    <div class="flex items-center gap-2 text-sm"><span class="w-2 h-2 rounded-full bg-accent-400"></span><span class="text-white">Certification 2</span></div>
                                 </div>
+                            </div>
+                            -->
+                        </div>
+                        <!-- CodeHub -->
+                        <div class="bg-base-800/40 rounded-2xl border border-purple-500/30 p-6 flex flex-col gap-4" style="background: linear-gradient(135deg, rgba(15,25,35,0.95) 0%, rgba(88,28,135,0.08) 100%);">
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background:rgba(168,85,247,0.15);border:1px solid rgba(168,85,247,0.3);">
+                                        <i class="fas fa-code text-purple-400 text-sm"></i>
+                                    </div>
+                                    <span class="text-[10px] font-mono text-purple-400/70 tracking-widest uppercase">Venture</span>
+                                </div>
+                                <span class="text-[10px] font-mono px-2 py-0.5 rounded" style="background:rgba(168,85,247,0.1);border:1px solid rgba(168,85,247,0.25);color:#c084fc;">ACTIVE</span>
+                            </div>
+                            <div>
+                                <div class="text-lg font-bold text-white mb-1">CodeHub</div>
+                                <div class="text-xs font-mono" style="color:#a78bfa;">Designing & building modern digital experiences · Uganda 🇺🇬</div>
+                            </div>
+                            <p class="text-sm text-slate-300 leading-relaxed">
+                                Co-founded a collaborative team of 8 developers from Kampala building real things for real people. Websites, interfaces, and more. We offer web development, UI/UX design, and graphic design services.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-1">
+                                <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(168,85,247,0.1);color:#c084fc;">Web Dev</span>
+                                <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(168,85,247,0.1);color:#c084fc;">UI/UX</span>
+                                <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(168,85,247,0.1);color:#c084fc;">Graphic Design</span>
+                                <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(168,85,247,0.1);color:#c084fc;">8 Members</span>
+                            </div>
+                            <div class="flex items-center gap-3 pt-2 border-t border-purple-500/15">
+                                <a href="https://the-runner-team.github.io/website/" target="_blank" rel="noopener noreferrer"
+                                   class="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-1.5 rounded-lg transition-all"
+                                   style="background:rgba(168,85,247,0.15);border:1px solid rgba(168,85,247,0.3);color:#c084fc;"
+                                   onmouseover="this.style.background='rgba(168,85,247,0.25)'" onmouseout="this.style.background='rgba(168,85,247,0.15)'">
+                                    <i class="fas fa-globe text-[10px]"></i> Website ↗
+                                </a>
+                                <a href="https://github.com/the-runner-team" target="_blank" rel="noopener noreferrer"
+                                   class="inline-flex items-center gap-1.5 text-xs font-mono px-3 py-1.5 rounded-lg transition-all"
+                                   style="background:rgba(168,85,247,0.15);border:1px solid rgba(168,85,247,0.3);color:#c084fc;"
+                                   onmouseover="this.style.background='rgba(168,85,247,0.25)'" onmouseout="this.style.background='rgba(168,85,247,0.15)'">
+                                    <i class="fab fa-github text-[10px]"></i> GitHub Org ↗
+                                </a>
                             </div>
                         </div>
-                        <!-- Certifications (hidden until available)
-                        <div class="bg-base-800/40 rounded-2xl border border-base-500/15 p-6">
-                            <div class="flex items-center gap-2 mb-5">
-                                <i class="fas fa-certificate text-accent-400"></i>
-                                <span class="text-[10px] font-mono text-slate-500 tracking-widest uppercase">Certifications</span>
-                            </div>
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-2 text-sm"><span class="w-2 h-2 rounded-full bg-accent-400"></span><span class="text-white">Certification 1</span></div>
-                                <div class="flex items-center gap-2 text-sm"><span class="w-2 h-2 rounded-full bg-accent-400"></span><span class="text-white">Certification 2</span></div>
-                            </div>
-                        </div>
-                        -->
                     </div>
 
                 </div>
