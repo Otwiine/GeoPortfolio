@@ -109,14 +109,27 @@
                 <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><span class="flex items-center gap-3"><i class="fas fa-briefcase"></i> Experience</span></a>
                 <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><span class="flex items-center gap-3"><i class="fas fa-envelope"></i> Contact</span></a>
             </nav>
-            <div class="space-y-4">
-                <!-- Kampala Clock -->
+            <div class="space-y-3">
+                <!-- CodeHub Tile -->
                 <div class="pt-3 border-t border-base-500/20">
-                    <div class="text-[10px] font-mono text-slate-500 tracking-widest uppercase mb-2 px-1">Kampala Time</div>
-                    <div class="bg-base-900/60 rounded-lg border border-base-500/20 px-3 py-2.5 font-mono">
-                        <div class="text-accent-400 text-sm font-semibold tracking-widest" id="kla-time">--:--:--</div>
-                        <div class="text-slate-500 text-[10px] mt-0.5" id="kla-date">--- -- ----</div>
-                    </div>
+                    <a href="https://the-runner-team.github.io/website/" target="_blank" rel="noopener noreferrer"
+                       class="block rounded-xl overflow-hidden transition-all hover:scale-[1.02]"
+                       style="background:linear-gradient(135deg,rgba(15,25,35,0.98) 0%,rgba(88,28,135,0.18) 100%);border:1px solid rgba(168,85,247,0.35);">
+                        <div class="px-3 pt-3 pb-2">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center gap-2">
+                                    <img src="images/CodeHub.png" alt="CodeHub" class="w-6 h-6 object-contain rounded" />
+                                    <span class="text-sm font-bold text-white">CodeHub</span>
+                                </div>
+                                <span class="text-[9px] font-mono px-1.5 py-0.5 rounded" style="background:rgba(168,85,247,0.15);border:1px solid rgba(168,85,247,0.3);color:#c084fc;">ACTIVE</span>
+                            </div>
+                            <p class="text-[10px] leading-relaxed mb-2" style="color:#a78bfa;">Web Dev · UI/UX · Design</p>
+                            <div class="flex items-center gap-1 text-[9px] font-mono" style="color:#9333ea;">
+                                <span>Uganda 🇺🇬</span>
+                                <span class="ml-auto" style="color:#c084fc;">↗ Visit</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="flex items-center gap-4 justify-center pt-1 border-t border-base-500/20">
                     <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
@@ -128,24 +141,6 @@
                     <span class="text-[11px] font-mono text-slate-400">SYSTEM ONLINE</span>
                 </div>
             </div>
-            <script>
-            (function(){
-                function updateClock(){
-                    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Africa/Kampala'}));
-                    var h=String(now.getHours()).padStart(2,'0');
-                    var m=String(now.getMinutes()).padStart(2,'0');
-                    var s=String(now.getSeconds()).padStart(2,'0');
-                    var days=['SUN','MON','TUE','WED','THU','FRI','SAT'];
-                    var months=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
-                    var t=document.getElementById('kla-time');
-                    var d=document.getElementById('kla-date');
-                    if(t)t.textContent=h+':'+m+':'+s;
-                    if(d)d.textContent=days[now.getDay()]+' '+String(now.getDate()).padStart(2,'0')+' '+months[now.getMonth()]+' '+now.getFullYear();
-                }
-                updateClock();
-                setInterval(updateClock,1000);
-            })();
-            </script>
         </aside>
 
         <main class="flex-1 lg:ml-60 xl:ml-64 min-h-screen grid-bg">
@@ -169,21 +164,23 @@
                     <div class="grid lg:grid-cols-3 gap-6 mb-8 fade-in-up">
                         <div class="lg:col-span-2 bg-base-800/50 rounded-2xl border border-base-500/20 p-6 sm:p-8">
                             <h1 class="text-3xl sm:text-4xl font-bold text-white mb-2">About <span class="text-accent-400">Me</span></h1>
+                            <br>
+                            <div class="flex flex-wrap gap-4 text-sm text-slate-400">
+                                <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-accent-400"></i> Kampala, Uganda</span>
+                            </div>
                             <p class="text-slate-300 leading-relaxed mt-4 mb-3">
-                                I am a 20-year-old Python developer based in Kampala, Uganda, with a strong interest in Geospatial Studies and Web Development.
+                                I am a 20-year-old developer based in Kampala, Uganda, with a strong interest in Geospatial Studies and Web Development.
                             </p>
                             <p class="text-slate-300 leading-relaxed mb-3">
-                                I am currently studying Geographical Information Systems (GIS), with a focus on applying Artificial Intelligence and Machine Learning techniques to satellite data analysis for agricultural applications. I am undertaking this training at the Quantum School of Artificial Intelligence and Robotics (QSAIR), founded by Robert Steven Owor, a Professor of Computer Science and Software Engineering at Albany State University.
+                                I am currently studying Geographical Information Systems (GIS) and Geospatial Intelligence (GEOINT), with a focus on applying Artificial Intelligence and Machine Learning techniques to spatial analysis. I am undertaking this training at the Quantum School of Artificial Intelligence and Robotics (QSAIR), founded by Robert Steven Owor, a Professor of Computer Science and Software Engineering at Albany State University.
                             </p>
                             <p class="text-slate-300 leading-relaxed mb-3">
                                 Beyond technology, I am actively engaged in sports and personal development. I enjoy playing basketball, running, and competing in chess. I am also an enthusiastic follower of Formula 1, a gamer, and a dedicated music listener.
                             </p>
                             <p class="text-slate-300 leading-relaxed mb-6">
-                                I am open to collaborative opportunities involving Python development, GIS applications, and front-end web technologies.
+                                I believe great work is built together. I co-founded <a href="https://the-runner-team.github.io/website/" target="_blank" rel="noopener noreferrer" class="font-semibold hover:opacity-80 transition-opacity" style="color:#c084fc;">CodeHub</a> — a collaborative team of 8 developers from Kampala building real digital experiences for real people. I'm always open to collaborative opportunities in Python development, GIS &amp; GEOINT applications, and front-end web technologies.
                             </p>
-                            <div class="flex flex-wrap gap-4 text-sm text-slate-400">
-                                <span class="flex items-center gap-2"><i class="fas fa-map-marker-alt text-accent-400"></i> Kampala, Uganda</span>
-                            </div>
+                            
                         </div>
                         <!-- Profile photo -->
                         <div class="bg-base-800/50 rounded-2xl border border-base-500/20 p-4 flex flex-col items-center gap-4">
@@ -196,11 +193,13 @@
                                 <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Basketball</span>
                                 <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Chess</span>
                                 <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Formula 1</span>
-                                <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Running</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Athletics</span>
                                 <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Gaming</span>
                                 <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Music</span>
                                 <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">GIS</span>
                                 <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">AI / ML</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">Web Dev</span>
+                                <span class="px-2.5 py-1 rounded-lg bg-base-700 border border-base-500/20 text-xs text-slate-300">GEOINT</span>
                             </div>
                         </div>
                     </div>
@@ -216,7 +215,7 @@
                                 </div>
                                 <div class="space-y-4">
                                     <div>
-                                        <div class="text-sm font-bold text-white">GIS &amp; AI/ML in Satellite Data Analysis</div>
+                                        <div class="text-sm font-bold text-white">GIS &amp; GEOINT</div>
                                         <div class="text-xs text-slate-400">QSAIR (Quantum School of AI &amp; Robotics) · Current</div>
                                     </div>
                                     <div>

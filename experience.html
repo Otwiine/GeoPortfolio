@@ -109,14 +109,27 @@
                 <a href="experience.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><span class="flex items-center gap-3"><i class="fas fa-briefcase"></i> Experience</span></a>
                 <a href="contact.html" class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium text-slate-300"><span class="flex items-center gap-3"><i class="fas fa-envelope"></i> Contact</span></a>
             </nav>
-            <div class="space-y-4">
-                <!-- Kampala Clock -->
+            <div class="space-y-3">
+                <!-- CodeHub Tile -->
                 <div class="pt-3 border-t border-base-500/20">
-                    <div class="text-[10px] font-mono text-slate-500 tracking-widest uppercase mb-2 px-1">Kampala Time</div>
-                    <div class="bg-base-900/60 rounded-lg border border-base-500/20 px-3 py-2.5 font-mono">
-                        <div class="text-accent-400 text-sm font-semibold tracking-widest" id="kla-time">--:--:--</div>
-                        <div class="text-slate-500 text-[10px] mt-0.5" id="kla-date">--- -- ----</div>
-                    </div>
+                    <a href="https://the-runner-team.github.io/website/" target="_blank" rel="noopener noreferrer"
+                       class="block rounded-xl overflow-hidden transition-all hover:scale-[1.02]"
+                       style="background:linear-gradient(135deg,rgba(15,25,35,0.98) 0%,rgba(88,28,135,0.18) 100%);border:1px solid rgba(168,85,247,0.35);">
+                        <div class="px-3 pt-3 pb-2">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="flex items-center gap-2">
+                                    <img src="images/CodeHub.png" alt="CodeHub" class="w-6 h-6 object-contain rounded" />
+                                    <span class="text-sm font-bold text-white">CodeHub</span>
+                                </div>
+                                <span class="text-[9px] font-mono px-1.5 py-0.5 rounded" style="background:rgba(168,85,247,0.15);border:1px solid rgba(168,85,247,0.3);color:#c084fc;">ACTIVE</span>
+                            </div>
+                            <p class="text-[10px] leading-relaxed mb-2" style="color:#a78bfa;">Web Dev · UI/UX · Design</p>
+                            <div class="flex items-center gap-1 text-[9px] font-mono" style="color:#9333ea;">
+                                <span>Uganda 🇺🇬</span>
+                                <span class="ml-auto" style="color:#c084fc;">↗ Visit</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="flex items-center gap-4 justify-center pt-1 border-t border-base-500/20">
                     <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
@@ -128,24 +141,6 @@
                     <span class="text-[11px] font-mono text-slate-400">SYSTEM ONLINE</span>
                 </div>
             </div>
-            <script>
-            (function(){
-                function updateClock(){
-                    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Africa/Kampala'}));
-                    var h=String(now.getHours()).padStart(2,'0');
-                    var m=String(now.getMinutes()).padStart(2,'0');
-                    var s=String(now.getSeconds()).padStart(2,'0');
-                    var days=['SUN','MON','TUE','WED','THU','FRI','SAT'];
-                    var months=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
-                    var t=document.getElementById('kla-time');
-                    var d=document.getElementById('kla-date');
-                    if(t)t.textContent=h+':'+m+':'+s;
-                    if(d)d.textContent=days[now.getDay()]+' '+String(now.getDate()).padStart(2,'0')+' '+months[now.getMonth()]+' '+now.getFullYear();
-                }
-                updateClock();
-                setInterval(updateClock,1000);
-            })();
-            </script>
         </aside>
 
         <main class="flex-1 lg:ml-60 xl:ml-64 min-h-screen grid-bg">
@@ -221,32 +216,32 @@
                         <!-- Library Management System -->
                         <div id="library-system" class="flex gap-4 sm:gap-6">
                             <div class="flex flex-col items-center flex-shrink-0">
-                                <div class="w-4 h-4 rounded-full border-2" style="background:rgba(124,58,237,0.2);border-color:rgba(124,58,237,0.8);"></div>
+                                <div class="w-4 h-4 rounded-full border-2" style="background:rgba(34,197,94,0.2);border-color:rgba(34,197,94,0.8);"></div>
                             </div>
                             <div class="flex-1 bg-base-800/50 rounded-2xl border border-base-500/20 p-5 sm:p-6 -mt-1">
                                 <span class="text-sm font-mono text-accent-400">March 2026</span>
                                 <h3 class="text-lg font-bold text-white mt-1">School Library Management System</h3>
                                 <p class="text-sm text-slate-400 mb-4">Personal Project · Originally built for RIS, Kampala</p>
-                                <div class="my-4 flex items-center justify-center rounded-xl p-8" style="background:#1a1a2e;max-width:24rem;">
-                                    <i class="fas fa-book-open text-6xl" style="color:#7c3aed;opacity:0.85;"></i>
+                                <div class="my-4 rounded-xl overflow-hidden flex items-center justify-center" style="max-width:24rem;background-color:#ffffff;min-height:160px;">
+                                    <i class="fas fa-book-open text-5xl text-accent-500"></i>
                                 </div>
                                 <p class="text-sm text-slate-300 leading-relaxed mb-4">
-                                    A free, open-source, web-based library management system built with PHP and MySQL. Designed for schools that need a simple, reliable way to track books, borrowers, and returns without expensive software. Originally built for Redemption International School, Kampala.
+                                    A free, open-source, web-based library management system built with PHP and MySQL. Designed for schools that need a simple, reliable way to track books, borrowers, and returns without expensive software. Originally built for <a href="https://redemptioninternationalschool.com/" target="_blank" rel="noopener noreferrer" class="text-accent-400 hover:underline">Redemption International School, Kampala</a>.
                                 </p>
                                 <a href="https://github.com/Otwiine/library-system" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mb-4">
                                     <img src="https://img.shields.io/badge/View%20Project%20on-GitHub-181717?logo=github&style=flat-square" alt="View on GitHub"/>
                                 </a>
                                 <ul class="space-y-2 text-sm text-slate-300 list-none mb-4">
-                                    <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#7c3aed;"></span>Book catalog management — add, track copies, availability</li>
-                                    <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#7c3aed;"></span>Issue and return books with condition tracking to eliminate disputes</li>
-                                    <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#7c3aed;"></span>Automatic overdue detection with days-overdue count</li>
-                                    <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#7c3aed;"></span>Staff login authentication, live dashboard, and search by name or class</li>
+                                    <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#4ade80;"></span>Book catalog management — add, track copies, availability</li>
+                                    <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#4ade80;"></span>Issue and return books with condition tracking to eliminate disputes</li>
+                                    <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#4ade80;"></span>Automatic overdue detection with days-overdue count</li>
+                                    <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0" style="background:#4ade80;"></span>Staff login authentication, live dashboard, and search by name or class</li>
                                 </ul>
                                 <div class="flex flex-wrap gap-2 mt-2">
-                                    <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(124,58,237,0.1);color:#a78bfa;">PHP</span>
-                                    <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(124,58,237,0.1);color:#a78bfa;">MySQL</span>
-                                    <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(124,58,237,0.1);color:#a78bfa;">HTML</span>
-                                    <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(124,58,237,0.1);color:#a78bfa;">CSS</span>
+                                    <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(34,197,94,0.1);color:#4ade80;">PHP</span>
+                                    <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(34,197,94,0.1);color:#4ade80;">MySQL</span>
+                                    <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(34,197,94,0.1);color:#4ade80;">HTML</span>
+                                    <span class="text-[10px] font-mono px-2 py-1 rounded" style="background:rgba(34,197,94,0.1);color:#4ade80;">CSS</span>
                                 </div>
                             </div>
                         </div>
