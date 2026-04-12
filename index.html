@@ -76,6 +76,7 @@
             <div class="pt-4 border-t border-base-500/30">
                 <div class="flex items-center gap-4 justify-center">
                     <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/otwiine-olweny-60b871402/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-linkedin text-lg"></i></a>
                     <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
                     <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 </div>
@@ -125,8 +126,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="flex items-center gap-4 justify-center pt-1 border-t border-base-500/20">
+                <div class="flex items-center gap-3 justify-center pt-1 border-t border-base-500/20">
                     <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                    <a href="https://www.linkedin.com/in/otwiine-olweny-60b871402/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-linkedin text-lg"></i></a>
                     <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
                     <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 </div>
@@ -159,7 +161,7 @@
                     <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(34,197,94,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(34,197,94,0.06) 1px, transparent 1px); background-size: 30px 30px;"></div>
                     <div class="relative flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
 
-                        <!-- LEFT: Profile photo — clean, no radar overlaid -->
+                        <!-- LEFT: Profile photo -->
                         <div class="flex-shrink-0 flex flex-col items-center gap-4">
                             <div class="relative w-32 h-32 lg:w-40 lg:h-40">
                                 <div class="absolute inset-0 rounded-full border border-accent-500/30"></div>
@@ -195,52 +197,35 @@
                             </div>
                         </div>
 
-                        <!-- RIGHT: Proper radar display -->
+                        <!-- RIGHT: Radar -->
                         <div class="hidden lg:block flex-shrink-0 relative" style="width:180px;height:180px;">
-
-                            <!-- Dark background circle -->
                             <div class="absolute inset-0 rounded-full" style="background:radial-gradient(circle,rgba(15,25,35,0.95) 0%,rgba(11,18,25,0.98) 100%);"></div>
-
-                            <!-- Concentric range rings -->
                             <div class="absolute rounded-full border border-accent-500/30" style="inset:0;"></div>
                             <div class="absolute rounded-full border border-accent-500/20" style="inset:22px;"></div>
                             <div class="absolute rounded-full border border-accent-500/15" style="inset:44px;"></div>
                             <div class="absolute rounded-full border border-accent-500/10" style="inset:66px;"></div>
-
-                            <!-- Cross-hair lines -->
                             <div class="absolute" style="top:50%;left:0;right:0;height:1px;background:rgba(34,197,94,0.12);transform:translateY(-50%);"></div>
                             <div class="absolute" style="left:50%;top:0;bottom:0;width:1px;background:rgba(34,197,94,0.12);transform:translateX(-50%);"></div>
-                            <!-- Diagonal lines -->
                             <div class="absolute inset-0 rounded-full overflow-hidden" style="opacity:0.08;">
                                 <div style="position:absolute;top:50%;left:50%;width:200%;height:1px;background:rgba(34,197,94,0.5);transform-origin:left center;transform:translateY(-50%) rotate(45deg);"></div>
                                 <div style="position:absolute;top:50%;left:50%;width:200%;height:1px;background:rgba(34,197,94,0.5);transform-origin:left center;transform:translateY(-50%) rotate(-45deg);"></div>
                             </div>
-
-                            <!-- Radar sweep — proper scan line from center, bright leading edge with fade trail -->
                             <div class="absolute inset-0 rounded-full overflow-hidden" style="animation:radarSweep 3s linear infinite;">
-                                <!-- Fading trail -->
                                 <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:conic-gradient(from 0deg, transparent 0deg, rgba(34,197,94,0.03) 20deg, rgba(34,197,94,0.08) 50deg, rgba(34,197,94,0.15) 75deg, rgba(74,222,128,0.35) 88deg, rgba(74,222,128,0.0) 90deg, transparent 90deg);"></div>
                             </div>
-
-                            <!-- Blip targets — scattered positions -->
                             <div class="absolute w-2 h-2 rounded-full" style="background:#4ade80;top:20%;left:60%;box-shadow:0 0 6px #4ade80;animation:pulse-ring 2.8s ease-in-out infinite;"></div>
                             <div class="absolute w-1.5 h-1.5 rounded-full" style="background:#fbbf24;top:62%;left:70%;box-shadow:0 0 5px #fbbf24;animation:pulse-ring 2.3s ease-in-out infinite 0.7s;"></div>
                             <div class="absolute w-1.5 h-1.5 rounded-full" style="background:#2dd4bf;top:72%;left:28%;box-shadow:0 0 5px #2dd4bf;animation:pulse-ring 3.1s ease-in-out infinite 1.2s;"></div>
                             <div class="absolute w-1 h-1 rounded-full" style="background:#4ade80;top:33%;left:22%;box-shadow:0 0 4px #4ade80;animation:pulse-ring 2.6s ease-in-out infinite 1.9s;"></div>
                             <div class="absolute w-1 h-1 rounded-full" style="background:#fbbf24;top:16%;left:42%;box-shadow:0 0 4px #fbbf24;animation:pulse-ring 3.4s ease-in-out infinite 0.4s;"></div>
                             <div class="absolute w-1 h-1 rounded-full" style="background:#2dd4bf;top:50%;left:80%;box-shadow:0 0 4px #2dd4bf;animation:pulse-ring 2.1s ease-in-out infinite 2.2s;"></div>
-
-                            <!-- Center origin dot -->
                             <div class="absolute" style="top:50%;left:50%;width:6px;height:6px;background:#4ade80;border-radius:50%;box-shadow:0 0 8px #4ade80,0 0 16px rgba(74,222,128,0.4);transform:translate(-50%,-50%);z-index:10;"></div>
-
-                            <!-- Outer border glow -->
                             <div class="absolute inset-0 rounded-full" style="border:1px solid rgba(74,222,128,0.4);box-shadow:0 0 20px rgba(74,222,128,0.08),inset 0 0 20px rgba(74,222,128,0.04);"></div>
                         </div>
-
                     </div>
                 </div>
 
-                <!-- Stats - highlighted as unverified -->
+                <!-- Stats -->
                 <div class="grid grid-cols-3 gap-3 sm:gap-4 mb-8 fade-in-up delay-1 max-w-2xl mx-auto">
                     <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 sm:p-5 card-hover">
                         <div class="flex items-start justify-between mb-3">
@@ -277,7 +262,6 @@
                         <a href="experience.html" class="text-xs font-mono text-accent-400 hover:text-accent-500 transition-colors flex items-center gap-1">VIEW ALL <i class="fas fa-arrow-right text-[10px]"></i></a>
                     </div>
                     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
-                        <!-- Library Management System -->
                         <a href="experience.html#library-system" class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800 block">
                             <div class="w-full h-full flex items-center justify-center p-6" style="background-color:#ffffff;">
                                 <i class="fas fa-book-open text-5xl text-accent-500 group-hover:text-accent-400 transition-colors"></i>
@@ -291,7 +275,6 @@
                                 </div>
                             </div>
                         </a>
-                        <!-- School Vote Uganda -->
                         <a href="experience.html#school-vote-uganda" class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800 block">
                             <img src="images/Banner_1.png" alt="School Vote Uganda" class="w-full h-full object-contain p-3 group-hover:opacity-90 transition-opacity rounded-xl" style="background-color:#ffffff;"/>
                             <div class="absolute inset-0 bg-gradient-to-t from-base-900/90 via-transparent to-transparent"></div>
@@ -303,7 +286,6 @@
                                 </div>
                             </div>
                         </a>
-                        <!-- RIS Tutoring -->
                         <a href="experience.html#ris-tutoring" class="group relative rounded-xl overflow-hidden aspect-[4/3] card-hover bg-base-800 block">
                             <img src="images/ris-logo.png" alt="Redemption International School" class="w-full h-full object-contain p-6 group-hover:opacity-90 transition-opacity rounded-xl" style="background-color:#ffffff;"/>
                             <div class="absolute inset-0 bg-gradient-to-t from-base-900/90 via-transparent to-transparent"></div>
@@ -316,10 +298,8 @@
                             </div>
                         </a>
                     </div>
-                    <!-- Focus Areas -->
                     <h2 class="text-lg font-bold text-white mb-4">Focus Areas</h2>
                     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                        <!-- Programming -->
                         <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-start gap-3">
                             <span class="w-2.5 h-2.5 rounded-full bg-gold-400 mt-1.5 flex-shrink-0"></span>
                             <div class="flex-1 min-w-0">
@@ -327,7 +307,6 @@
                                 <div class="text-xs text-slate-400">Python · Java</div>
                             </div>
                         </div>
-                        <!-- GIS & GEOINT -->
                         <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-start gap-3">
                             <span class="w-2.5 h-2.5 rounded-full bg-accent-400 mt-1.5 flex-shrink-0"></span>
                             <div class="flex-1 min-w-0">
@@ -335,7 +314,6 @@
                                 <div class="text-xs text-slate-400">Studying at QSAIR</div>
                             </div>
                         </div>
-                        <!-- Web Development -->
                         <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-start gap-3">
                             <span class="w-2.5 h-2.5 rounded-full bg-blue-400 mt-1.5 flex-shrink-0"></span>
                             <div class="flex-1 min-w-0">
@@ -343,7 +321,6 @@
                                 <div class="text-xs text-slate-400">HTML · CSS · JavaScript</div>
                             </div>
                         </div>
-                        <!-- Teaching -->
                         <div class="bg-base-800/40 rounded-xl border border-base-500/15 p-4 card-hover flex items-start gap-3">
                             <span class="w-2.5 h-2.5 rounded-full bg-teal-400 mt-1.5 flex-shrink-0"></span>
                             <div class="flex-1 min-w-0">
@@ -360,6 +337,7 @@
             </div>
             <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-base-800/95 backdrop-blur-sm border-t border-base-500/30 px-4 py-3 flex items-center justify-center gap-6 z-30">
                 <a href="https://github.com/Otwiine" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-github text-lg"></i></a>
+                <a href="https://www.linkedin.com/in/otwiine-olweny-60b871402/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-linkedin text-lg"></i></a>
                 <a href="https://www.instagram.com/otwiine/" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
                 <a href="https://x.com/Mr_OJO16" target="_blank" class="text-slate-400 hover:text-accent-400 transition-colors"><i class="fab fa-x-twitter text-lg"></i></a>
                 <span class="text-[10px] font-mono text-slate-500 flex items-center gap-1.5 ml-4">
