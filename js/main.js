@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // ── Active nav highlight ──
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const resolvedPage = (currentPage === '' || currentPage === '/') ? 'index.html' : currentPage;
 
@@ -20,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // ── Breadcrumb ──
     const breadcrumbEl = document.getElementById('breadcrumb');
     if (breadcrumbEl) {
         const map = {
@@ -34,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
         breadcrumbEl.textContent = map[resolvedPage] || resolvedPage;
     }
 
-    // ── Mobile menu ──
     const mobileMenu = document.getElementById('mobileMenu');
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenuClose = document.getElementById('mobileMenuClose');
@@ -53,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
     if (mobileMenuOverlay) mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 
-    // ── Contact form ──
     const contactForm = document.getElementById('contactForm');
     const contactSuccess = document.getElementById('contactSuccess');
     if (contactForm) {

@@ -26,7 +26,6 @@
 .delay-4 { animation-delay: 0.4s; }
 .delay-5 { animation-delay: 0.5s; }
 
-/* ── Topo background: applied to body so it truly covers everything ── */
 body {
     background-color: #0b1219;
     background-image: url('../images/topo-pattern.jpg');
@@ -36,7 +35,6 @@ body {
     background-attachment: fixed;
 }
 
-/* Dark overlay so content stays readable */
 body::before {
     content: '';
     position: fixed;
@@ -46,13 +44,11 @@ body::before {
     pointer-events: none;
 }
 
-/* Ensure all direct children of body sit above overlay */
 body > * {
     position: relative;
     z-index: 1;
 }
 
-/* grid-bg no longer needs to carry the background */
 .grid-bg {
     background: transparent;
 }
@@ -80,10 +76,8 @@ body > * {
 
 .skill-bar { transition: width 1s ease-out; }
 
-/* Tech icon sizing fix */
 .tech-icon { width: 28px; height: 28px; object-fit: contain; flex-shrink: 0; }
 
-/* ── Nav active dot ── */
 .nav-item {
     justify-content: space-between;
 }
